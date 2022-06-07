@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>SWITCH OPEN H</name>
+  <width>30</width>
+  <height>30</height>
+  <widget type="ellipse" version="2.0.0">
+    <name>Ellipse</name>
+    <x>1</x>
+    <y>11</y>
+    <width>8</width>
+    <height>8</height>
+    <line_width>0</line_width>
+    <background_color>
+      <color name="TEXT" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>Ellipse_1</name>
+    <x>21</x>
+    <y>11</y>
+    <width>8</width>
+    <height>8</height>
+    <line_width>0</line_width>
+    <background_color>
+      <color name="TEXT" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline</name>
+    <x>5</x>
+    <y>5</y>
+    <width>20</width>
+    <height>10</height>
+    <line_width>5</line_width>
+    <line_color>
+      <color name="TEXT" red="25" green="25" blue="25">
+      </color>
+    </line_color>
+    <points>
+      <point x="0.0" y="10.0">
+      </point>
+      <point x="18.0" y="0.0">
+      </point>
+    </points>
+  </widget>
+</display>

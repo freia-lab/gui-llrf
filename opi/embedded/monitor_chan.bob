@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Monitor Channel</name>
+  <width>140</width>
+  <height>130</height>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>$(CHAN_NAME)</text>
+    <x>3</x>
+    <width>135</width>
+    <height>27</height>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_1</name>
+    <text>Alarm</text>
+    <x>13</x>
+    <y>30</y>
+    <width>110</width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_3</name>
+    <text>Magnitude Max/Min</text>
+    <x>3</x>
+    <y>60</y>
+    <width>147</width>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED</name>
+    <pv_name>$(SYSTEM):$(CHAN_NAME)-SMON-ALARMSTAT</pv_name>
+    <x>103</x>
+    <y>30</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_1</name>
+    <pv_name>$(SYSTEM):$(CHAN_NAME)-$(MAGTYPE)</pv_name>
+    <x>3</x>
+    <y>90</y>
+    <width>130</width>
+    <height>30</height>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle</name>
+    <width>140</width>
+    <height>120</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <transparent>true</transparent>
+  </widget>
+</display>

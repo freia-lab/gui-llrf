@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>status channel</name>
+  <width>270</width>
+  <height>30</height>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(SYSTEM):$(CHANNEL).DESC</pv_name>
+    <width>160</width>
+    <height>30</height>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED</name>
+    <pv_name>$(SYSTEM):$(CHANNEL)-SMON-ALARMSTAT</pv_name>
+    <x>167</x>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_1</name>
+    <pv_name>$(SYSTEM):$(CHANNEL)-SMON-PMSSTAT</pv_name>
+    <x>207</x>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_2</name>
+    <pv_name>$(SYSTEM):$(CHANNEL)-SMON-ILCKSTAT</pv_name>
+    <x>245</x>
+  </widget>
+</display>

@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Loop Angle</name>
+  <width>1100</width>
+  <height>650</height>
+  <scripts>
+    <script file="scripts/callculateLoopDelay.js">
+      <pv_name>$(SYSTEM):REFCOMP-CTRLIN-ANG</pv_name>
+      <pv_name>$(SYSTEM):REFCOMP-REF-ANG</pv_name>
+      <pv_name>$(SYSTEM):IQSMPL-ANGOFFSETVAL</pv_name>
+      <pv_name>$(SYSTEM):IQSMPL-ANGOFFSETEN</pv_name>
+      <pv_name>$(SYSTEM):PI-FIXEDSPANG</pv_name>
+      <pv_name trigger="false">loc://SISLLRFCompAngVal</pv_name>
+      <pv_name trigger="false">loc://SISLLRFLoopDelayVal</pv_name>
+    </script>
+  </scripts>
+  <widget type="embedded" version="2.0.0">
+    <name>CAVITY H</name>
+    <file>embedded/cavity-h.bob</file>
+    <x>640</x>
+    <y>10</y>
+    <width>125</width>
+    <height>60</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>REFERENCE</name>
+    <file>embedded/reference.bob</file>
+    <x>1042</x>
+    <y>20</y>
+    <width>40</width>
+    <height>41</height>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle</name>
+    <x>220</x>
+    <y>180</y>
+    <width>770</width>
+    <height>400</height>
+    <background_color>
+      <color red="30" green="144" blue="255" alpha="97">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group</name>
+    <x>72</x>
+    <y>80</y>
+    <width>260</width>
+    <height>90</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_1</name>
+      <width>260</width>
+      <height>90</height>
+      <line_color>
+        <color name="GREEN-BORDER" red="40" green="140" blue="40">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="GREEN-BORDER" red="40" green="140" blue="40">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>Loop Delay
+(outgoing - compensted angle)</text>
+      <width>260</width>
+      <height>50</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="18.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="HEADER-TEXT" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>2</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update</name>
+      <pv_name>loc://SISLLRFLoopDelayVal</pv_name>
+      <x>42</x>
+      <y>52</y>
+      <width>180</width>
+      <height>30</height>
+      <precision>6</precision>
+    </widget>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Display</name>
+    <macros>
+      <CT>SP</CT>
+      <PI_TYPE>PI-I</PI_TYPE>
+    </macros>
+    <file>embedded/fixed-point.bob</file>
+    <x>270</x>
+    <y>470</y>
+    <width>460</width>
+    <height>40</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Display_1</name>
+    <macros>
+      <CT>SP</CT>
+      <PI_TYPE>PI-Q</PI_TYPE>
+    </macros>
+    <file>embedded/fixed-point.bob</file>
+    <x>270</x>
+    <y>510</y>
+    <width>460</width>
+    <height>40</height>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_3</name>
+    <x>260</x>
+    <y>460</y>
+    <width>480</width>
+    <height>90</height>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group</name>
+    <x>390</x>
+    <y>200</y>
+    <width>320</width>
+    <height>110</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_2</name>
+      <width>320</width>
+      <height>110</height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_1</name>
+      <class>CAPTION</class>
+      <text>Value</text>
+      <y>33</y>
+      <width>70</width>
+      <foreground_color use_class="true">
+        <color name="Text" red="25" green="25" blue="25">
+        </color>
+      </foreground_color>
+      <horizontal_alignment use_class="true">2</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry</name>
+      <pv_name>$(SYSTEM):IQSMPL-ANGOFFSETVAL</pv_name>
+      <x>80</x>
+      <y>33</y>
+      <height>30</height>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_1</name>
+      <pv_name>$(SYSTEM):IQSMPL-ANGOFFSETVAL-RBV</pv_name>
+      <x>200</x>
+      <y>33</y>
+      <width>110</width>
+      <height>30</height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_3</name>
+      <text>IQ Angle Offset:</text>
+      <x>10</x>
+      <y>1</y>
+      <width>290</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="HEADER-TEXT" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>2</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="slide_button" version="2.0.0">
+      <name>Slide Button</name>
+      <pv_name>$(SYSTEM):IQSMPL-ANGOFFSETEN</pv_name>
+      <label></label>
+      <x>90</x>
+      <y>69</y>
+      <width>65</width>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED</name>
+      <pv_name>$(SYSTEM):IQSMPL-ANGOFFSETEN-RBV</pv_name>
+      <x>220</x>
+      <y>76</y>
+    </widget>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_3</name>
+    <pv_name>$(SYSTEM):REFCOMP-CTRLIN-ANG</pv_name>
+    <x>785</x>
+    <y>322</y>
+    <width>110</width>
+    <height>30</height>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_4</name>
+    <pv_name>$(SYSTEM):REFCOMP-REF-ANG</pv_name>
+    <x>785</x>
+    <y>410</y>
+    <width>110</width>
+    <height>30</height>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_5</name>
+    <pv_name>loc://SISLLRFCompAngVal(0)</pv_name>
+    <x>270</x>
+    <y>323</y>
+    <width>110</width>
+    <height>30</height>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_6</name>
+    <pv_name>$(SYSTEM):PI-FIXEDSPANG</pv_name>
+    <x>72</x>
+    <y>514</y>
+    <width>110</width>
+    <height>30</height>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_4</name>
+    <text>Firmware Loop</text>
+    <x>830</x>
+    <y>540</y>
+    <width>140</width>
+    <height>30</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="HEADER-TEXT" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>2</vertical_alignment>
+    <wrap_words>false</wrap_words>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_5</name>
+    <text>Angle Out</text>
+    <x>59</x>
+    <y>470</y>
+    <width>140</width>
+    <height>30</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="HEADER-TEXT" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>2</vertical_alignment>
+    <wrap_words>false</wrap_words>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_6</name>
+    <text>Compensated
+Angle
+(input to PI)
+
+</text>
+    <x>260</x>
+    <y>253</y>
+    <width>120</width>
+    <height>70</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="HEADER-TEXT" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>2</vertical_alignment>
+    <wrap_words>false</wrap_words>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_7</name>
+    <text>Cavity Angle</text>
+    <x>765</x>
+    <y>288</y>
+    <width>140</width>
+    <height>30</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="HEADER-TEXT" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>2</vertical_alignment>
+    <wrap_words>false</wrap_words>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_8</name>
+    <text>Reference Angle</text>
+    <x>765</x>
+    <y>382</y>
+    <width>140</width>
+    <height>30</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="HEADER-TEXT" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>2</vertical_alignment>
+    <wrap_words>false</wrap_words>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline</name>
+    <x>1046</x>
+    <y>419</y>
+    <width>1</width>
+    <height>1</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+    </points>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_1</name>
+    <x>1050</x>
+    <y>80</y>
+    <width>10</width>
+    <height>360</height>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_2</name>
+    <x>1036</x>
+    <y>432</y>
+    <width>1</width>
+    <height>1</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+    </points>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_3</name>
+    <x>895</x>
+    <y>69</y>
+    <width>167</width>
+    <height>358</height>
+    <points>
+      <point x="167.66740206379518" y="0.0">
+      </point>
+      <point x="167.99993896484375" y="357.5335002491848">
+      </point>
+      <point x="0.0" y="358.5335002491848">
+      </point>
+    </points>
+    <line_width>2</line_width>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_4</name>
+    <x>761</x>
+    <y>39</y>
+    <width>250</width>
+    <height>300</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="250.9090576171875" y="1.8181838989257812">
+      </point>
+      <point x="249.09088134765625" y="300.90910720825195">
+      </point>
+      <point x="132.727294921875" y="300.90910720825195">
+      </point>
+    </points>
+    <line_width>2</line_width>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_5</name>
+    <x>624</x>
+    <y>796</y>
+    <width>1</width>
+    <height>1</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+    </points>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_6</name>
+    <x>29</x>
+    <y>37</y>
+    <width>616</width>
+    <height>469</height>
+    <points>
+      <point x="228.18184280395508" y="466.36363983154297">
+      </point>
+      <point x="0.0" y="469.09090423583984">
+      </point>
+      <point x="0.9090919494628906" y="0.0">
+      </point>
+      <point x="616.3636360168457" y="2.7272720336914062">
+      </point>
+    </points>
+    <line_width>2</line_width>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_7</name>
+    <x>379</x>
+    <y>338</y>
+    <width>404</width>
+    <height>1</height>
+    <points>
+      <point x="404.5454406738281" y="0.909088134765625">
+      </point>
+      <point x="0.0" y="0.0">
+      </point>
+    </points>
+    <line_width>2</line_width>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_8</name>
+    <x>154</x>
+    <y>175</y>
+    <width>103</width>
+    <height>122</height>
+    <points>
+      <point x="103.63638305664062" y="122.727294921875">
+      </point>
+      <point x="1.81817626953125" y="122.727294921875">
+      </point>
+      <point x="0.0" y="0.0">
+      </point>
+    </points>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="GREEN-BORDER" red="40" green="140" blue="40">
+      </color>
+    </line_color>
+    <arrows>2</arrows>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_9</name>
+    <x>123</x>
+    <y>175</y>
+    <width>1</width>
+    <height>291</height>
+    <points>
+      <point x="0.0" y="291.0405474553814">
+      </point>
+      <point x="0.909088134765625" y="0.0">
+      </point>
+    </points>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="GREEN-BORDER" red="40" green="140" blue="40">
+      </color>
+    </line_color>
+    <arrows>2</arrows>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_10</name>
+    <x>755</x>
+    <y>351</y>
+    <width>25</width>
+    <height>74</height>
+    <points>
+      <point x="25.10403490911233" y="74.9616413454338">
+      </point>
+      <point x="0.5586247528623289" y="74.9616413454338">
+      </point>
+      <point x="0.0" y="0.0">
+      </point>
+    </points>
+    <line_width>2</line_width>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>Ellipse</name>
+    <x>740</x>
+    <y>325</y>
+    <width>30</width>
+    <height>28</height>
+    <line_width>2</line_width>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>Ellipse_1</name>
+    <x>506</x>
+    <y>323</y>
+    <width>30</width>
+    <height>28</height>
+    <line_width>2</line_width>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_11</name>
+    <x>521</x>
+    <y>309</y>
+    <width>1</width>
+    <height>40</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="0.0" y="40.97010601111191">
+      </point>
+    </points>
+    <line_width>2</line_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_17</name>
+    <text>This value is set by FIxed PI-I/Q - not by the value in the tables</text>
+    <x>50</x>
+    <y>550</y>
+    <width>150</width>
+    <height>70</height>
+    <background_color>
+      <color name="YELLOW" red="252" green="242" blue="17">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+  </widget>
+</display>

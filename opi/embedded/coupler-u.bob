@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>COUPLER U</name>
+  <width>40</width>
+  <height>25</height>
+  <widget type="ellipse" version="2.0.0">
+    <name>Ellipse</name>
+    <x>1</x>
+    <y>1</y>
+    <width>8</width>
+    <height>8</height>
+    <line_width>0</line_width>
+    <background_color>
+      <color name="TEXT" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>Ellipse_1</name>
+    <x>31</x>
+    <y>1</y>
+    <width>8</width>
+    <height>8</height>
+    <line_width>0</line_width>
+    <background_color>
+      <color name="TEXT" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline</name>
+    <x>5</x>
+    <y>5</y>
+    <width>30</width>
+    <height>15</height>
+    <line_color>
+      <color name="TEXT" red="25" green="25" blue="25">
+      </color>
+    </line_color>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="0.0" y="15.0">
+      </point>
+      <point x="30.0" y="15.000001907348633">
+      </point>
+      <point x="30.0" y="0.0">
+      </point>
+    </points>
+  </widget>
+</display>

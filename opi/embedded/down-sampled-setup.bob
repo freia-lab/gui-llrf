@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Down-sampled setup</name>
+  <width>1000</width>
+  <height>20</height>
+  <widget type="combo" version="2.0.0">
+    <name>Combo Box</name>
+    <pv_name>$(SYSTEM):DWN$(CHANNEL)-DAQFMT</pv_name>
+    <x>830</x>
+    <width>90</width>
+    <height>20</height>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(SYSTEM):DWN$(CHANNEL)-SMNM-RBV</pv_name>
+    <x>360</x>
+    <width>70</width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_1</name>
+    <pv_name>$(SYSTEM):DWN$(CHANNEL)-SMNM-ACQ</pv_name>
+    <x>490</x>
+    <width>60</width>
+  </widget>
+  <widget type="slide_button" version="2.0.0">
+    <name>Slide Button</name>
+    <pv_name>$(SYSTEM):DWN$(CHANNEL)-ENBL</pv_name>
+    <label></label>
+    <x>10</x>
+    <width>40</width>
+    <height>20</height>
+  </widget>
+  <widget type="slide_button" version="2.0.0">
+    <name>Slide Button_1</name>
+    <pv_name>$(SYSTEM):DWN$(CHANNEL)-ENBL-TRANSF</pv_name>
+    <label></label>
+    <x>150</x>
+    <width>40</width>
+    <height>20</height>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED</name>
+    <pv_name>$(SYSTEM):DWN$(CHANNEL)-ENBL-RBV</pv_name>
+    <x>50</x>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry</name>
+    <pv_name>$(SYSTEM):DWN$(CHANNEL)-SMNM</pv_name>
+    <x>280</x>
+    <width>70</width>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_2</name>
+    <pv_name>$(SYSTEM):DWN$(CHANNEL)-DEC-FAC</pv_name>
+    <x>700</x>
+    <width>50</width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_3</name>
+    <pv_name>$(SYSTEM):DWN$(CHANNEL)-DEC-FAC-RBV</pv_name>
+    <x>760</x>
+    <width>50</width>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_1</name>
+    <pv_name>$(SYSTEM):DWN$(CHANNEL)-DEC-ENBL-RBV</pv_name>
+    <x>670</x>
+  </widget>
+  <widget type="slide_button" version="2.0.0">
+    <name>Slide Button_3</name>
+    <pv_name>$(SYSTEM):DWN$(CHANNEL)-DEC-ENBL</pv_name>
+    <label></label>
+    <x>620</x>
+    <width>40</width>
+    <height>20</height>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_4</name>
+    <pv_name>$(SYSTEM):DWN$(CHANNEL)-DAQFMT-RBV</pv_name>
+    <x>930</x>
+    <width>70</width>
+  </widget>
+</display>

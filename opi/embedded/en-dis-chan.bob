@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Enable Disable Channel</name>
+  <width>330</width>
+  <height>30</height>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(SYSTEM):AI$(CHAN).DESC</pv_name>
+    <width>160</width>
+    <height>27</height>
+  </widget>
+  <widget type="slide_button" version="2.0.0">
+    <name>Slide Button</name>
+    <pv_name>$(SYSTEM):AI$(CHAN)-ENBL</pv_name>
+    <label></label>
+    <x>200</x>
+    <width>40</width>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED</name>
+    <pv_name>$(SYSTEM):AI$(CHAN)-ENBL-RBV</pv_name>
+    <x>246</x>
+    <y>2</y>
+    <width>25</width>
+    <height>25</height>
+  </widget>
+  <widget type="slide_button" version="2.0.0">
+    <name>Slide Button_1</name>
+    <pv_name>$(SYSTEM):AI$(CHAN)-ENBL-TRANSF</pv_name>
+    <label></label>
+    <x>290</x>
+    <width>40</width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>AI$(CHAN)</text>
+    <x>160</x>
+    <width>30</width>
+    <height>27</height>
+  </widget>
+</display>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Compare Plots</name>
+  <width>850</width>
+  <height>700</height>
+  <widget type="embedded" version="2.0.0">
+    <name>Channel Plot</name>
+    <file>plot_ch.bob</file>
+    <y>30</y>
+    <width>420</width>
+    <height>320</height>
+    <scripts>
+      <script file="../scripts/loadMacroChannelPlot.py">
+        <pv_name>loc://CH_PLOT0("")</pv_name>
+        <pv_name trigger="false">loc://prefix("$(SYSTEM)")</pv_name>
+      </script>
+    </scripts>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>Combo Box</name>
+    <pv_name>loc://CH_PLOT0("")</pv_name>
+    <width>270</width>
+    <items>
+      <item></item>
+      <item>$(ch0_label=) - DWN0</item>
+      <item>$(ch1_label=) - DWN1</item>
+      <item>$(ch2_label=) - DWN2</item>
+      <item>$(ch3_label=) - DWN3</item>
+      <item>$(ch4_label=) - DWN4</item>
+      <item>$(ch5_label=) - DWN5</item>
+      <item>$(ch6_label=) - DWN6</item>
+      <item>$(ch7_label=) - DWN7</item>
+      <item>$(ch8_label=) - DWN8</item>
+      <item>$(ch9_label=) - DWN9</item>
+      <item>$(chintern0_label=) - PIERR</item>
+      <item>$(chintern1_label=) - CAVROT</item>
+      <item>$(chintern2_label=) - CAVFILT</item>
+      <item>$(chintern3_label=) - PIOUT</item>
+      <item>$(chintern4_label=) - FWOUT</item>
+      <item>$(chintern5_label=) - PIERRILC</item>
+    </items>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Channel Plot_2</name>
+    <file>plot_ch.bob</file>
+    <x>420</x>
+    <y>30</y>
+    <width>420</width>
+    <height>320</height>
+    <scripts>
+      <script file="../scripts/loadMacroChannelPlot.py">
+        <pv_name>loc://CH_PLOT1("")</pv_name>
+        <pv_name trigger="false">loc://prefix("$(SYSTEM)")</pv_name>
+      </script>
+    </scripts>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>Combo Box_1</name>
+    <pv_name>loc://CH_PLOT1("")</pv_name>
+    <x>420</x>
+    <width>270</width>
+    <items>
+      <item></item>
+      <item>$(ch0_label=) - DWN0</item>
+      <item>$(ch1_label=) - DWN1</item>
+      <item>$(ch2_label=) - DWN2</item>
+      <item>$(ch3_label=) - DWN3</item>
+      <item>$(ch4_label=) - DWN4</item>
+      <item>$(ch5_label=) - DWN5</item>
+      <item>$(ch6_label=) - DWN6</item>
+      <item>$(ch7_label=) - DWN7</item>
+      <item>$(ch8_label=) - DWN8</item>
+      <item>$(ch9_label=) - DWN9</item>
+      <item>$(chintern0_label=) - PIERR</item>
+      <item>$(chintern1_label=) - CAVROT</item>
+      <item>$(chintern2_label=) - CAVFILT</item>
+      <item>$(chintern3_label=) - PIOUT</item>
+      <item>$(chintern4_label=) - FWOUT</item>
+      <item>$(chintern5_label=) - PIERRILC</item>
+    </items>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>Combo Box_2</name>
+    <pv_name>loc://CH_PLOT2("")</pv_name>
+    <y>350</y>
+    <width>270</width>
+    <items>
+      <item></item>
+      <item>$(ch0_label=) - DWN0</item>
+      <item>$(ch1_label=) - DWN1</item>
+      <item>$(ch2_label=) - DWN2</item>
+      <item>$(ch3_label=) - DWN3</item>
+      <item>$(ch4_label=) - DWN4</item>
+      <item>$(ch5_label=) - DWN5</item>
+      <item>$(ch6_label=) - DWN6</item>
+      <item>$(ch7_label=) - DWN7</item>
+      <item>$(ch8_label=) - DWN8</item>
+      <item>$(ch9_label=) - DWN9</item>
+      <item>$(chintern0_label=) - PIERR</item>
+      <item>$(chintern1_label=) - CAVROT</item>
+      <item>$(chintern2_label=) - CAVFILT</item>
+      <item>$(chintern3_label=) - PIOUT</item>
+      <item>$(chintern4_label=) - FWOUT</item>
+      <item>$(chintern5_label=) - PIERRILC</item>
+    </items>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Channel Plot_3</name>
+    <file>plot_ch.bob</file>
+    <y>380</y>
+    <width>420</width>
+    <height>320</height>
+    <scripts>
+      <script file="../scripts/loadMacroChannelPlot.py">
+        <pv_name>loc://CH_PLOT2("")</pv_name>
+        <pv_name trigger="false">loc://prefix("$(SYSTEM)")</pv_name>
+      </script>
+    </scripts>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>Combo Box_3</name>
+    <pv_name>loc://CH_PLOT3("")</pv_name>
+    <x>420</x>
+    <y>350</y>
+    <width>270</width>
+    <items>
+      <item></item>
+      <item>$(ch0_label=) - DWN0</item>
+      <item>$(ch1_label=) - DWN1</item>
+      <item>$(ch2_label=) - DWN2</item>
+      <item>$(ch3_label=) - DWN3</item>
+      <item>$(ch4_label=) - DWN4</item>
+      <item>$(ch5_label=) - DWN5</item>
+      <item>$(ch6_label=) - DWN6</item>
+      <item>$(ch7_label=) - DWN7</item>
+      <item>$(ch8_label=) - DWN8</item>
+      <item>$(ch9_label=) - DWN9</item>
+      <item>$(chintern0_label=) - PIERR</item>
+      <item>$(chintern1_label=) - CAVROT</item>
+      <item>$(chintern2_label=) - CAVFILT</item>
+      <item>$(chintern3_label=) - PIOUT</item>
+      <item>$(chintern4_label=) - FWOUT</item>
+      <item>$(chintern5_label=) - PIERRILC</item>
+    </items>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Channel Plot_4</name>
+    <file>plot_ch.bob</file>
+    <x>420</x>
+    <y>380</y>
+    <width>420</width>
+    <height>320</height>
+    <scripts>
+      <script file="../scripts/loadMacroChannelPlot.py">
+        <pv_name>loc://CH_PLOT3("")</pv_name>
+        <pv_name trigger="false">loc://prefix("$(SYSTEM)")</pv_name>
+      </script>
+    </scripts>
+  </widget>
+</display>

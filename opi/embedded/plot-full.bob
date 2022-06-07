@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Full Plot</name>
+  <widget type="embedded" version="2.0.0">
+    <name>Display</name>
+    <file>full-plot-emb.bob</file>
+    <width>800</width>
+    <height>600</height>
+    <scripts>
+      <script file="../scripts/loadMacroDataFmt.py">
+        <pv_name>loc://prefixch("$(PLOT)")</pv_name>
+      </script>
+    </scripts>
+  </widget>
+</display>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Calibration</name>
+  <width>1000</width>
+  <actions>
+  </actions>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_2</name>
+    <pv_name>$(SYSTEM):$(CHANNEL)-CSV</pv_name>
+    <x>160</x>
+    <y>410</y>
+    <width>170</width>
+    <height>49</height>
+    <format>6</format>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Calibration File Name:</text>
+    <y>429</y>
+    <width>160</width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_1</name>
+    <text>Calculated Slope:</text>
+    <x>3</x>
+    <y>468</y>
+    <width>160</width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>Calculated Offset:</text>
+    <x>3</x>
+    <y>500</y>
+    <width>160</width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(SYSTEM):$(CHANNEL)-LCVF-RBV</pv_name>
+    <x>163</x>
+    <y>468</y>
+    <precision>4</precision>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_1</name>
+    <pv_name>$(SYSTEM):$(CHANNEL)-LCVO-RBV</pv_name>
+    <x>163</x>
+    <y>500</y>
+    <precision>4</precision>
+  </widget>
+  <widget type="xyplot" version="2.0.0">
+    <name>X/Y Plot_1</name>
+    <x>520</x>
+    <width>470</width>
+    <height>340</height>
+    <title>Calibrated Waveform</title>
+    <show_legend>false</show_legend>
+    <tooltip></tooltip>
+    <x_axis>
+      <title>ms</title>
+      <autoscale>true</autoscale>
+      <log_scale>false</log_scale>
+      <minimum>0.0</minimum>
+      <maximum>1024.0</maximum>
+      <show_grid>false</show_grid>
+      <title_font>
+        <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </title_font>
+      <scale_font>
+        <font name="Default" family="Source Sans Pro" style="REGULAR" size="16.0">
+        </font>
+      </scale_font>
+      <visible>true</visible>
+    </x_axis>
+    <y_axes>
+      <y_axis>
+        <title>Y</title>
+        <autoscale>true</autoscale>
+        <log_scale>false</log_scale>
+        <minimum>-10.0</minimum>
+        <maximum>10.0</maximum>
+        <show_grid>false</show_grid>
+        <title_font>
+          <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+          </font>
+        </title_font>
+        <scale_font>
+          <font name="Default" family="Source Sans Pro" style="REGULAR" size="16.0">
+          </font>
+        </scale_font>
+        <visible>true</visible>
+      </y_axis>
+    </y_axes>
+    <traces>
+      <trace>
+        <name></name>
+        <x_pv>$(SYSTEM):$(CHANNEL)-XAX</x_pv>
+        <y_pv>$(SYSTEM):$(CHANNEL)</y_pv>
+        <err_pv></err_pv>
+        <axis>0</axis>
+        <trace_type>1</trace_type>
+        <color>
+          <color red="0" green="0" blue="255">
+          </color>
+        </color>
+        <line_width>1</line_width>
+        <line_style>0</line_style>
+        <point_type>0</point_type>
+        <point_size>10</point_size>
+        <visible>true</visible>
+      </trace>
+    </traces>
+  </widget>
+  <widget type="xyplot" version="2.0.0">
+    <name>X/Y Plot</name>
+    <width>470</width>
+    <height>340</height>
+    <title>Calibration Values</title>
+    <show_legend>false</show_legend>
+    <tooltip></tooltip>
+    <x_axis>
+      <title>Raw Values</title>
+      <autoscale>true</autoscale>
+      <log_scale>false</log_scale>
+      <minimum>0.0</minimum>
+      <maximum>100.0</maximum>
+      <show_grid>false</show_grid>
+      <title_font>
+        <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </title_font>
+      <scale_font>
+        <font name="Default" family="Source Sans Pro" style="REGULAR" size="16.0">
+        </font>
+      </scale_font>
+      <visible>true</visible>
+    </x_axis>
+    <y_axes>
+      <y_axis>
+        <title>EGU Values</title>
+        <autoscale>true</autoscale>
+        <log_scale>false</log_scale>
+        <minimum>-10.0</minimum>
+        <maximum>10.0</maximum>
+        <show_grid>false</show_grid>
+        <title_font>
+          <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+          </font>
+        </title_font>
+        <scale_font>
+          <font name="Default" family="Source Sans Pro" style="REGULAR" size="16.0">
+          </font>
+        </scale_font>
+        <visible>true</visible>
+      </y_axis>
+    </y_axes>
+    <traces>
+      <trace>
+        <name>Calibration Values</name>
+        <x_pv>$(SYSTEM):$(CHANNEL)-RAW</x_pv>
+        <y_pv>$(SYSTEM):$(CHANNEL)-EGU</y_pv>
+        <err_pv></err_pv>
+        <axis>0</axis>
+        <trace_type>1</trace_type>
+        <color>
+          <color red="0" green="0" blue="255">
+          </color>
+        </color>
+        <line_width>1</line_width>
+        <line_style>0</line_style>
+        <point_type>0</point_type>
+        <point_size>10</point_size>
+        <visible>true</visible>
+      </trace>
+      <trace>
+        <name>Fitted line</name>
+        <x_pv>$(SYSTEM):$(CHANNEL)-RAW</x_pv>
+        <y_pv>$(SYSTEM):$(CHANNEL)-FIT</y_pv>
+        <err_pv></err_pv>
+        <axis>0</axis>
+        <trace_type>1</trace_type>
+        <color>
+          <color name="ERROR" red="252" green="13" blue="27">
+          </color>
+        </color>
+        <line_width>1</line_width>
+        <line_style>0</line_style>
+        <point_type>0</point_type>
+        <point_size>10</point_size>
+        <visible>true</visible>
+      </trace>
+    </traces>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions execute_as_one="true">
+      <action type="write_pv">
+        <pv_name>$(SYSTEM):$(CHANNEL)-CSV</pv_name>
+        <value></value>
+        <description>Reset file name</description>
+      </action>
+    </actions>
+    <text>Reset Calibration</text>
+    <x>400</x>
+    <y>410</y>
+    <width>130</width>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>Combo Box</name>
+    <pv_name>$(SYSTEM):$(CHANNEL)-LIN</pv_name>
+    <x>163</x>
+    <y>540</y>
+    <width>150</width>
+    <height>20</height>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_3</name>
+    <text>Linear/Non-Linear:</text>
+    <x>3</x>
+    <y>540</y>
+    <width>160</width>
+  </widget>
+</display>

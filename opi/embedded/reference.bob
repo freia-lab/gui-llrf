@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>REFERENCE</name>
+  <width>40</width>
+  <height>40</height>
+  <widget type="ellipse" version="2.0.0">
+    <name>Ellipse</name>
+    <x>5</x>
+    <y>5</y>
+    <width>30</width>
+    <height>30</height>
+    <line_color>
+      <color name="TEXT" red="25" green="25" blue="25">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="Background" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>∿</text>
+    <x>5</x>
+    <y>5</y>
+    <width>30</width>
+    <height>30</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="24.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+</display>

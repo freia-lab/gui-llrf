@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Control Tables</name>
+  <height>2000</height>
+  <widget type="embedded" version="2.0.0">
+    <name>Display Table</name>
+    <file>embedded/display-table.bob</file>
+    <macros>
+      <TABPREF>$(CTRLTYPE)-$(TABLE)</TABPREF>
+    </macros>
+    <x>510</x>
+    <width>670</width>
+    <height>600</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Generate/Load Table</name>
+    <file>embedded/gen-load-table.bob</file>
+    <x>10</x>
+    <y>70</y>
+    <width>450</width>
+    <height>570</height>
+    <scripts>
+      <script file="scripts/loadIQTable.py">
+        <pv_name>loc://IQ</pv_name>
+        <pv_name>loc://fileName("embedded/gen-load-table.bob")</pv_name>
+      </script>
+    </scripts>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_62</name>
+    <text>I / Q</text>
+    <y>20</y>
+    <width>80</width>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>Combo Box_1</name>
+    <pv_name>loc://IQ("I")</pv_name>
+    <x>100</x>
+    <y>20</y>
+    <width>130</width>
+    <items>
+      <item>I</item>
+      <item>Q</item>
+    </items>
+  </widget>
+</display>

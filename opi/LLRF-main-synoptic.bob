@@ -1,0 +1,1462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>MAIN SYNOPTIC</name>
+  <width>1010</width>
+  <height>700</height>
+  <widget type="group" version="2.0.0">
+    <name>DB AI3</name>
+    <x>670</x>
+    <y>10</y>
+    <width>310</width>
+    <height>210</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>DB Border AI4</name>
+      <width>310</width>
+      <height>210</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="PRIMARY" red="0" green="148" blue="202">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Read_Background" red="230" green="235" blue="232">
+        </color>
+      </background_color>
+      <corner_width>4</corner_width>
+      <corner_height>4</corner_height>
+    </widget>
+    <widget type="xyplot" version="2.0.0">
+      <name>X/Y Plot_3</name>
+      <x>3</x>
+      <y>2</y>
+      <width>305</width>
+      <height>206</height>
+      <show_legend>false</show_legend>
+      <x_axis>
+        <title>ms</title>
+        <autoscale>true</autoscale>
+        <log_scale>false</log_scale>
+        <minimum>0.0</minimum>
+        <maximum>100.0</maximum>
+        <show_grid>false</show_grid>
+        <title_font>
+          <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+          </font>
+        </title_font>
+        <scale_font>
+          <font name="Default" family="Source Sans Pro" style="REGULAR" size="16.0">
+          </font>
+        </scale_font>
+        <visible>true</visible>
+      </x_axis>
+      <y_axes>
+        <y_axis>
+          <title>Cavity Fwd</title>
+          <autoscale>true</autoscale>
+          <log_scale>false</log_scale>
+          <minimum>0.0</minimum>
+          <maximum>100.0</maximum>
+          <show_grid>false</show_grid>
+          <title_font>
+            <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+            </font>
+          </title_font>
+          <scale_font>
+            <font name="Default" family="Source Sans Pro" style="REGULAR" size="16.0">
+            </font>
+          </scale_font>
+          <visible>true</visible>
+        </y_axis>
+      </y_axes>
+      <traces>
+        <trace>
+          <name></name>
+          <x_pv>$(SYSTEM=LLRF):DWN$(chCavFwd=3)-XAXIS</x_pv>
+          <y_pv>$(SYSTEM=LLRF):DWN$(chCavFwd=3)-CMP0</y_pv>
+          <err_pv></err_pv>
+          <axis>0</axis>
+          <trace_type>1</trace_type>
+          <color>
+            <color red="0" green="0" blue="255">
+            </color>
+          </color>
+          <line_width>1</line_width>
+          <line_style>0</line_style>
+          <point_type>0</point_type>
+          <point_size>10</point_size>
+          <visible>true</visible>
+        </trace>
+      </traces>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>DB AI2</name>
+    <x>350</x>
+    <y>10</y>
+    <width>310</width>
+    <height>210</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>DB Border AI2</name>
+      <width>310</width>
+      <height>210</height>
+      <visible>$(showPreAmp=true)</visible>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="PRIMARY" red="0" green="148" blue="202">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Read_Background" red="230" green="235" blue="232">
+        </color>
+      </background_color>
+      <corner_width>4</corner_width>
+      <corner_height>4</corner_height>
+    </widget>
+    <widget type="xyplot" version="2.0.0">
+      <name>X/Y Plot_2</name>
+      <x>1</x>
+      <y>1</y>
+      <width>305</width>
+      <height>206</height>
+      <show_legend>false</show_legend>
+      <x_axis>
+        <title>ms</title>
+        <autoscale>true</autoscale>
+        <log_scale>false</log_scale>
+        <minimum>0.0</minimum>
+        <maximum>100.0</maximum>
+        <show_grid>false</show_grid>
+        <title_font>
+          <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+          </font>
+        </title_font>
+        <scale_font>
+          <font name="Default" family="Source Sans Pro" style="REGULAR" size="16.0">
+          </font>
+        </scale_font>
+        <visible>true</visible>
+      </x_axis>
+      <y_axes>
+        <y_axis>
+          <title>PreAmp Fwd</title>
+          <autoscale>true</autoscale>
+          <log_scale>false</log_scale>
+          <minimum>0.0</minimum>
+          <maximum>100.0</maximum>
+          <show_grid>false</show_grid>
+          <title_font>
+            <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+            </font>
+          </title_font>
+          <scale_font>
+            <font name="Default" family="Source Sans Pro" style="REGULAR" size="16.0">
+            </font>
+          </scale_font>
+          <visible>true</visible>
+        </y_axis>
+      </y_axes>
+      <traces>
+        <trace>
+          <name></name>
+          <x_pv>$(SYSTEM=LLRF):DWN$(chPreAmp=2)-XAXIS</x_pv>
+          <y_pv>$(SYSTEM=LLRF):DWN$(chPreAmp=2)-CMP0</y_pv>
+          <err_pv></err_pv>
+          <axis>0</axis>
+          <trace_type>1</trace_type>
+          <color>
+            <color red="0" green="0" blue="255">
+            </color>
+          </color>
+          <line_width>1</line_width>
+          <line_style>0</line_style>
+          <point_type>0</point_type>
+          <point_size>10</point_size>
+          <visible>true</visible>
+        </trace>
+      </traces>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_2</name>
+      <actions>
+        <action type="open_display">
+          <file>embedded/plot-full.bob</file>
+          <macros>
+            <PLOT>$(SYSTEM=LLRF):DWN$(chPreAmp=2)</PLOT>
+            <TITLE>PreAmp Fwd</TITLE>
+          </macros>
+          <target>standalone</target>
+          <description>Open Display</description>
+        </action>
+      </actions>
+      <text>...</text>
+      <x>289</x>
+      <y>190</y>
+      <width>21</width>
+      <height>20</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>DB AI7</name>
+    <x>30</x>
+    <y>10</y>
+    <width>310</width>
+    <height>210</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>Border_db_VMoutput</name>
+      <width>310</width>
+      <height>210</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="PRIMARY" red="0" green="148" blue="202">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Read_Background" red="230" green="235" blue="232">
+        </color>
+      </background_color>
+      <corner_width>4</corner_width>
+      <corner_height>4</corner_height>
+    </widget>
+    <widget type="xyplot" version="2.0.0">
+      <name>X/Y Plot_1</name>
+      <x>2</x>
+      <y>2</y>
+      <width>305</width>
+      <height>206</height>
+      <show_legend>false</show_legend>
+      <x_axis>
+        <title>ms</title>
+        <autoscale>true</autoscale>
+        <log_scale>false</log_scale>
+        <minimum>0.0</minimum>
+        <maximum>100.0</maximum>
+        <show_grid>false</show_grid>
+        <title_font>
+          <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+          </font>
+        </title_font>
+        <scale_font>
+          <font name="Default" family="Source Sans Pro" style="REGULAR" size="16.0">
+          </font>
+        </scale_font>
+        <visible>true</visible>
+      </x_axis>
+      <y_axes>
+        <y_axis>
+          <title>Vector Modulator</title>
+          <autoscale>true</autoscale>
+          <log_scale>false</log_scale>
+          <minimum>0.0</minimum>
+          <maximum>100.0</maximum>
+          <show_grid>false</show_grid>
+          <title_font>
+            <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+            </font>
+          </title_font>
+          <scale_font>
+            <font name="Default" family="Source Sans Pro" style="REGULAR" size="16.0">
+            </font>
+          </scale_font>
+          <visible>true</visible>
+        </y_axis>
+      </y_axes>
+      <traces>
+        <trace>
+          <name></name>
+          <x_pv>$(SYSTEM=LLRF):DWN$(chVM=7)-XAXIS</x_pv>
+          <y_pv>$(SYSTEM=LLRF):DWN$(chVM=7)-CMP0</y_pv>
+          <err_pv></err_pv>
+          <axis>0</axis>
+          <trace_type>1</trace_type>
+          <color>
+            <color red="0" green="0" blue="255">
+            </color>
+          </color>
+          <line_width>1</line_width>
+          <line_style>0</line_style>
+          <point_type>0</point_type>
+          <point_size>10</point_size>
+          <visible>true</visible>
+        </trace>
+      </traces>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>DB AI0</name>
+    <x>30</x>
+    <y>480</y>
+    <width>500</width>
+    <height>220</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <scripts>
+      <script file="scripts/showCavity.py">
+        <pv_name>loc://cav-en(1)</pv_name>
+      </script>
+    </scripts>
+    <widget type="rectangle" version="2.0.0">
+      <name>DB Border AI0</name>
+      <width>500</width>
+      <height>220</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="PRIMARY" red="0" green="148" blue="202">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Read_Background" red="230" green="235" blue="232">
+        </color>
+      </background_color>
+      <corner_width>4</corner_width>
+      <corner_height>4</corner_height>
+    </widget>
+    <widget type="xyplot" version="2.0.0">
+      <name>X/Y Plot</name>
+      <x>2</x>
+      <y>2</y>
+      <width>495</width>
+      <height>215</height>
+      <show_legend>false</show_legend>
+      <x_axis>
+        <title>ms</title>
+        <autoscale>true</autoscale>
+        <log_scale>false</log_scale>
+        <minimum>0.0</minimum>
+        <maximum>100.0</maximum>
+        <show_grid>false</show_grid>
+        <title_font>
+          <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+          </font>
+        </title_font>
+        <scale_font>
+          <font name="Default" family="Source Sans Pro" style="REGULAR" size="16.0">
+          </font>
+        </scale_font>
+        <visible>true</visible>
+      </x_axis>
+      <y_axes>
+        <y_axis>
+          <title>Cavity Field</title>
+          <autoscale>true</autoscale>
+          <log_scale>false</log_scale>
+          <minimum>0.0</minimum>
+          <maximum>100.0</maximum>
+          <show_grid>false</show_grid>
+          <title_font>
+            <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+            </font>
+          </title_font>
+          <scale_font>
+            <font name="Default" family="Source Sans Pro" style="REGULAR" size="16.0">
+            </font>
+          </scale_font>
+          <visible>true</visible>
+        </y_axis>
+      </y_axes>
+      <traces>
+        <trace>
+          <name></name>
+          <x_pv>$(SYSTEM=LLRF):DWN$(chCav=0)-XAXIS</x_pv>
+          <y_pv>$(SYSTEM=LLRF):DWN$(chCav=0)-CMP0</y_pv>
+          <err_pv></err_pv>
+          <axis>0</axis>
+          <trace_type>1</trace_type>
+          <color>
+            <color red="0" green="0" blue="255">
+            </color>
+          </color>
+          <line_width>1</line_width>
+          <line_style>0</line_style>
+          <point_type>0</point_type>
+          <point_size>10</point_size>
+          <visible>true</visible>
+        </trace>
+      </traces>
+    </widget>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_3</name>
+    <actions>
+      <action type="open_display">
+        <file>embedded/plot-full.bob</file>
+        <macros>
+          <PLOT>$(SYSTEM=LLRF):DWN$(chCavFwd=3)</PLOT>
+          <TITLE>Cavity Fwd</TITLE>
+        </macros>
+        <target>window</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <text>...</text>
+    <x>960</x>
+    <y>200</y>
+    <width>21</width>
+    <height>20</height>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_1</name>
+    <actions>
+      <action type="open_display">
+        <file>embedded/plot-full.bob</file>
+        <macros>
+          <PLOT>$(SYSTEM=LLRF):DWN$(chVM=7)</PLOT>
+          <TITLE>VM</TITLE>
+        </macros>
+        <target>standalone</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <text>...</text>
+    <x>320</x>
+    <y>200</y>
+    <width>21</width>
+    <height>20</height>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions>
+      <action type="open_display">
+        <file>embedded/plot-full.bob</file>
+        <macros>
+          <PLOT>$(SYSTEM=LLRF):DWN$(chCav=0)</PLOT>
+          <TITLE>Cavity Field</TITLE>
+        </macros>
+        <target>standalone</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <text>...</text>
+    <x>510</x>
+    <y>680</y>
+    <width>21</width>
+    <height>20</height>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>DB AI4</name>
+    <x>670</x>
+    <y>480</y>
+    <width>310</width>
+    <height>220</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>DB Border AI4</name>
+      <width>310</width>
+      <height>220</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="PRIMARY" red="0" green="148" blue="202">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Read_Background" red="230" green="235" blue="232">
+        </color>
+      </background_color>
+      <corner_width>4</corner_width>
+      <corner_height>4</corner_height>
+    </widget>
+    <widget type="xyplot" version="2.0.0">
+      <name>X/Y Plot_4</name>
+      <x>3</x>
+      <y>2</y>
+      <width>305</width>
+      <height>216</height>
+      <show_legend>false</show_legend>
+      <x_axis>
+        <title>ms</title>
+        <autoscale>true</autoscale>
+        <log_scale>false</log_scale>
+        <minimum>0.0</minimum>
+        <maximum>100.0</maximum>
+        <show_grid>false</show_grid>
+        <title_font>
+          <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+          </font>
+        </title_font>
+        <scale_font>
+          <font name="Default" family="Source Sans Pro" style="REGULAR" size="16.0">
+          </font>
+        </scale_font>
+        <visible>true</visible>
+      </x_axis>
+      <y_axes>
+        <y_axis>
+          <title>Cavity Rfl</title>
+          <autoscale>true</autoscale>
+          <log_scale>false</log_scale>
+          <minimum>0.0</minimum>
+          <maximum>100.0</maximum>
+          <show_grid>false</show_grid>
+          <title_font>
+            <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+            </font>
+          </title_font>
+          <scale_font>
+            <font name="Default" family="Source Sans Pro" style="REGULAR" size="16.0">
+            </font>
+          </scale_font>
+          <visible>true</visible>
+        </y_axis>
+      </y_axes>
+      <traces>
+        <trace>
+          <name></name>
+          <x_pv>$(SYSTEM=LLRF):DWN$(chCavRfl=4)-XAXIS</x_pv>
+          <y_pv>$(SYSTEM=LLRF):DWN$(chCavRfl=4)-CMP0</y_pv>
+          <err_pv></err_pv>
+          <axis>0</axis>
+          <trace_type>1</trace_type>
+          <color>
+            <color red="0" green="0" blue="255">
+            </color>
+          </color>
+          <line_width>1</line_width>
+          <line_style>0</line_style>
+          <point_type>0</point_type>
+          <point_size>10</point_size>
+          <visible>true</visible>
+        </trace>
+      </traces>
+    </widget>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_4</name>
+    <actions>
+      <action type="open_display">
+        <file>embedded/plot-full.bob</file>
+        <macros>
+          <PLOT>$(SYSTEM=LLRF):DWN$(chCavRfl=4)</PLOT>
+          <TITLE>Cavity Rfl</TITLE>
+        </macros>
+        <target>window</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <text>...</text>
+    <x>960</x>
+    <y>680</y>
+    <width>21</width>
+    <height>20</height>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group</name>
+    <x>10</x>
+    <y>215</y>
+    <width>984</width>
+    <height>350</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline AI3_1</name>
+      <x>250</x>
+      <y>5</y>
+      <width>1</width>
+      <height>125</height>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="0.681369182289643" y="125.43154088551785">
+        </point>
+      </points>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="PRIMARY" red="0" green="148" blue="202">
+        </color>
+      </line_color>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>AI3_1</name>
+      <x>190</x>
+      <width>120</width>
+      <height>30</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="rectangle" version="2.0.0">
+        <name>AI3 Border_1</name>
+        <width>120</width>
+        <height>30</height>
+        <line_width>2</line_width>
+        <line_color>
+          <color name="PRIMARY" red="0" green="148" blue="202">
+          </color>
+        </line_color>
+        <background_color>
+          <color name="Read_Background" red="230" green="235" blue="232">
+          </color>
+        </background_color>
+        <corner_width>15</corner_width>
+        <corner_height>15</corner_height>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>AI3 Text Update</name>
+        <pv_name>$(SYSTEM=LLRF):AI$(chVM=7)-SMON-MAGAVG</pv_name>
+        <x>10</x>
+        <y>5</y>
+        <precision>3</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_1</name>
+      <x>220</x>
+      <y>130</y>
+      <width>155</width>
+      <height>1</height>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="155.0" y="0.0">
+        </point>
+      </points>
+      <line_color>
+        <color name="TEXT" red="25" green="25" blue="25">
+        </color>
+      </line_color>
+      <arrows>2</arrows>
+      <arrow_length>5</arrow_length>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Caption 2</name>
+      <text>RF Switch</text>
+      <x>350</x>
+      <y>80</y>
+      <height>25</height>
+      <font>
+        <font name="MEDIUM-SANS-BOLD" family="Source Sans Pro" style="BOLD" size="18.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="PRIMARY" red="0" green="148" blue="202">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>SWITCH 2</name>
+      <x>380</x>
+      <y>110</y>
+      <width>40</width>
+      <height>35</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="embedded" version="2.0.0">
+        <name>SWITCH OPEN H 2</name>
+        <file>embedded/switch-open-h.bob</file>
+        <x>5</x>
+        <y>5</y>
+        <width>30</width>
+        <height>30</height>
+        <resize>2</resize>
+        <transparent>true</transparent>
+      </widget>
+      <widget type="rectangle" version="2.0.0">
+        <name>SWITCH BOX 2</name>
+        <width>40</width>
+        <height>30</height>
+        <line_width>1</line_width>
+        <line_color>
+          <color name="TEXT" red="25" green="25" blue="25">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="220" green="225" blue="221" alpha="0">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="polyline" version="2.0.0">
+        <name>LINE 1-2</name>
+        <y>20</y>
+        <width>10</width>
+        <height>1</height>
+        <points>
+          <point x="0.0" y="0.0">
+          </point>
+          <point x="10.0" y="0.0">
+          </point>
+        </points>
+        <line_color>
+          <color name="TEXT" red="25" green="25" blue="25">
+          </color>
+        </line_color>
+        <arrow_length>7</arrow_length>
+      </widget>
+      <widget type="polyline" version="2.0.0">
+        <name>LINE 2-2</name>
+        <x>30</x>
+        <y>20</y>
+        <width>10</width>
+        <height>1</height>
+        <points>
+          <point x="0.0" y="0.0">
+          </point>
+          <point x="10.0" y="0.0">
+          </point>
+        </points>
+        <line_color>
+          <color name="TEXT" red="25" green="25" blue="25">
+          </color>
+        </line_color>
+        <arrow_length>7</arrow_length>
+      </widget>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_DiodeToAmp</name>
+      <x>420</x>
+      <y>130</y>
+      <width>55</width>
+      <height>1</height>
+      <visible>$(showPreAmp)</visible>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="55.0" y="0.0">
+        </point>
+      </points>
+      <line_color>
+        <color name="TEXT" red="25" green="25" blue="25">
+        </color>
+      </line_color>
+      <arrows>2</arrows>
+      <arrow_length>5</arrow_length>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline AI2_1</name>
+      <x>565</x>
+      <y>15</y>
+      <width>1</width>
+      <height>104</height>
+      <visible>$(showPreAmp)</visible>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="0.1839987840928643" y="104.72767699300118">
+        </point>
+      </points>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="PRIMARY" red="0" green="148" blue="202">
+        </color>
+      </line_color>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>AI2</name>
+      <x>505</x>
+      <width>120</width>
+      <height>30</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="rectangle" version="2.0.0">
+        <name>AI2 Border</name>
+        <width>120</width>
+        <height>30</height>
+        <visible>$(showPreAmp)</visible>
+        <line_width>2</line_width>
+        <line_color>
+          <color name="PRIMARY" red="0" green="148" blue="202">
+          </color>
+        </line_color>
+        <background_color>
+          <color name="Read_Background" red="230" green="235" blue="232">
+          </color>
+        </background_color>
+        <corner_width>15</corner_width>
+        <corner_height>15</corner_height>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>AI2 Text Update</name>
+        <pv_name>$(SYSTEM=LLRF):AI$(chPreAmp=2)-SMON-MAGAVG</pv_name>
+        <x>10</x>
+        <y>5</y>
+        <visible>$(showPreAmp)</visible>
+        <precision>3</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_5</name>
+      <x>520</x>
+      <y>129</y>
+      <width>114</width>
+      <height>1</height>
+      <visible>$(showPreAmp)</visible>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="114.2834191515409" y="0.3905690050004864">
+        </point>
+      </points>
+      <line_color>
+        <color name="TEXT" red="25" green="25" blue="25">
+        </color>
+      </line_color>
+      <arrows>2</arrows>
+      <arrow_length>5</arrow_length>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>KLYSTRON L</name>
+      <file>embedded/tetrode-l.bob</file>
+      <x>635</x>
+      <y>65</y>
+      <width>130</width>
+      <height>130</height>
+      <resize>2</resize>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline AI1_2</name>
+      <x>828</x>
+      <y>30</y>
+      <width>121</width>
+      <height>194</height>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="0.0" y="30.0">
+        </point>
+        <point x="120.0" y="30.0">
+        </point>
+        <point x="120.0" y="195.0">
+        </point>
+      </points>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="PRIMARY" red="0" green="148" blue="202">
+        </color>
+      </line_color>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>AI3</name>
+      <x>765</x>
+      <y>3</y>
+      <width>120</width>
+      <height>30</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="rectangle" version="2.0.0">
+        <name>AI3 Border</name>
+        <width>120</width>
+        <height>30</height>
+        <line_width>2</line_width>
+        <line_color>
+          <color name="PRIMARY" red="0" green="148" blue="202">
+          </color>
+        </line_color>
+        <background_color>
+          <color name="Read_Background" red="230" green="235" blue="232">
+          </color>
+        </background_color>
+        <corner_width>15</corner_width>
+        <corner_height>15</corner_height>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>AI3 Text Update</name>
+        <pv_name>$(SYSTEM=LLRF):AI$(chCavFwd=3)-SMON-MAGAVG</pv_name>
+        <x>10</x>
+        <y>5</y>
+        <precision>3</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline AI3</name>
+      <x>310</x>
+      <y>220</y>
+      <width>1</width>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="0.0" y="20.0">
+        </point>
+      </points>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="PRIMARY" red="0" green="148" blue="202">
+        </color>
+      </line_color>
+      <scripts>
+        <script file="scripts/showCavity.py">
+          <pv_name>loc://cav-en(1)</pv_name>
+        </script>
+      </scripts>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_6</name>
+      <x>755</x>
+      <y>128</y>
+      <width>137</width>
+      <height>1</height>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="125.0" y="0.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="TEXT" red="25" green="25" blue="25">
+        </color>
+      </line_color>
+      <arrow_length>5</arrow_length>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_7</name>
+      <x>755</x>
+      <y>132</y>
+      <width>137</width>
+      <height>1</height>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="125.0" y="0.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="TEXT" red="25" green="25" blue="25">
+        </color>
+      </line_color>
+      <arrow_length>5</arrow_length>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>CIRCULATOR</name>
+      <file>embedded/circulator.bob</file>
+      <x>875</x>
+      <y>100</y>
+      <width>60</width>
+      <height>60</height>
+      <resize>2</resize>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>LOAD V</name>
+      <file>embedded/load_v.bob</file>
+      <x>885</x>
+      <y>150</y>
+      <width>40</width>
+      <height>65</height>
+      <resize>2</resize>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_8</name>
+      <x>929</x>
+      <y>132</y>
+      <width>38</width>
+      <height>106</height>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="38.0" y="0.0">
+        </point>
+        <point x="38.0" y="106.0">
+        </point>
+        <point x="0.0" y="106.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="TEXT" red="25" green="25" blue="25">
+        </color>
+      </line_color>
+      <scripts>
+        <script file="scripts/showCavity.py">
+          <pv_name>loc://cav-en(1)</pv_name>
+        </script>
+      </scripts>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_9</name>
+      <x>929</x>
+      <y>128</y>
+      <width>42</width>
+      <height>114</height>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="42.00000000000001" y="0.0">
+        </point>
+        <point x="42.00000000000001" y="114.00000000000001">
+        </point>
+        <point x="0.0" y="114.00000000000001">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="TEXT" red="25" green="25" blue="25">
+        </color>
+      </line_color>
+      <scripts>
+        <script file="scripts/showCavity.py">
+          <pv_name>loc://cav-en(1)</pv_name>
+        </script>
+      </scripts>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>CAVITY H</name>
+      <file>embedded/cavity-h.bob</file>
+      <x>525</x>
+      <y>290</y>
+      <width>125</width>
+      <height>60</height>
+      <resize>2</resize>
+      <transparent>true</transparent>
+      <scripts>
+        <script file="scripts/showCavity.py">
+          <pv_name>loc://cav-en(1)</pv_name>
+        </script>
+      </scripts>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_12</name>
+      <x>602</x>
+      <y>242</y>
+      <width>178</width>
+      <height>53</height>
+      <points>
+        <point x="330.0" y="0.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="0.0" y="53.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="TEXT" red="25" green="25" blue="25">
+        </color>
+      </line_color>
+      <scripts>
+        <script file="scripts/showCavity.py">
+          <pv_name>loc://cav-en(1)</pv_name>
+        </script>
+      </scripts>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_13</name>
+      <x>598</x>
+      <y>238</y>
+      <width>182</width>
+      <height>57</height>
+      <points>
+        <point x="332.0" y="0.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="0.0" y="57.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="TEXT" red="25" green="25" blue="25">
+        </color>
+      </line_color>
+      <scripts>
+        <script file="scripts/showCavity.py">
+          <pv_name>loc://cav-en(1)</pv_name>
+        </script>
+      </scripts>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle CONTROLLER</name>
+      <x>60</x>
+      <y>100</y>
+      <width>160</width>
+      <height>60</height>
+      <line_color>
+        <color name="TEXT" red="25" green="25" blue="25">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <corner_width>8</corner_width>
+      <corner_height>8</corner_height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Caption CONTROLLER</name>
+      <text>Controller</text>
+      <x>70</x>
+      <y>110</y>
+      <width>140</width>
+      <height>40</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="24.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_14</name>
+      <x>20</x>
+      <y>144</y>
+      <width>645</width>
+      <height>190</height>
+      <points>
+        <point x="545.0" y="150.0">
+        </point>
+        <point x="545.0" y="75.25342797678769">
+        </point>
+        <point x="0.0" y="75.25342797678769">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="35.0" y="0.0">
+        </point>
+      </points>
+      <line_color>
+        <color name="TEXT" red="25" green="25" blue="25">
+        </color>
+      </line_color>
+      <arrows>2</arrows>
+      <arrow_length>5</arrow_length>
+      <scripts>
+        <script file="scripts/showCavity.py">
+          <pv_name>loc://cav-en(1)</pv_name>
+        </script>
+      </scripts>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>AI0_1</name>
+      <x>250</x>
+      <y>240</y>
+      <width>120</width>
+      <height>30</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <scripts>
+        <script file="scripts/showCavity.py">
+          <pv_name>loc://cav-en(1)</pv_name>
+        </script>
+      </scripts>
+      <widget type="rectangle" version="2.0.0">
+        <name>AI0 Border_1</name>
+        <width>120</width>
+        <height>30</height>
+        <line_width>2</line_width>
+        <line_color>
+          <color name="PRIMARY" red="0" green="148" blue="202">
+          </color>
+        </line_color>
+        <background_color>
+          <color name="Read_Background" red="230" green="235" blue="232">
+          </color>
+        </background_color>
+        <corner_width>15</corner_width>
+        <corner_height>15</corner_height>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>AI0 Text Update_1</name>
+        <pv_name>$(SYSTEM=LLRF):AI$(chCav=0)-SMON-MAGAVG</pv_name>
+        <x>10</x>
+        <y>5</y>
+        <precision>3</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>REFERENCE</name>
+      <file>embedded/reference.bob</file>
+      <y>65</y>
+      <width>40</width>
+      <height>40</height>
+      <resize>2</resize>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_15</name>
+      <x>20</x>
+      <y>100</y>
+      <width>35</width>
+      <height>15</height>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="0.0" y="15.0">
+        </point>
+        <point x="35.0" y="15.0">
+        </point>
+      </points>
+      <line_color>
+        <color name="TEXT" red="25" green="25" blue="25">
+        </color>
+      </line_color>
+      <arrows>2</arrows>
+      <arrow_length>5</arrow_length>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_16</name>
+      <x>555</x>
+      <y>120</y>
+      <width>40</width>
+      <height>1</height>
+      <visible>$(showPreAmp)</visible>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="40.0" y="0.0">
+        </point>
+      </points>
+      <line_color>
+        <color name="PRIMARY" red="0" green="148" blue="202">
+        </color>
+      </line_color>
+      <arrows>2</arrows>
+      <arrow_length>15</arrow_length>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Group</name>
+      <x>770</x>
+      <y>120</y>
+      <width>100</width>
+      <height>1</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="polyline" version="2.0.0">
+        <name>Polyline_17</name>
+        <width>40</width>
+        <height>1</height>
+        <points>
+          <point x="0.0" y="0.0">
+          </point>
+          <point x="40.0" y="0.0">
+          </point>
+        </points>
+        <line_color>
+          <color name="PRIMARY" red="0" green="148" blue="202">
+          </color>
+        </line_color>
+        <arrows>2</arrows>
+        <arrow_length>15</arrow_length>
+      </widget>
+      <widget type="polyline" version="2.0.0">
+        <name>Polyline_18</name>
+        <x>60</x>
+        <width>40</width>
+        <height>1</height>
+        <points>
+          <point x="0.0" y="0.0">
+          </point>
+          <point x="40.0" y="0.0">
+          </point>
+        </points>
+        <line_color>
+          <color name="SECONDARY" red="202" green="0" blue="0">
+          </color>
+        </line_color>
+        <arrows>1</arrows>
+        <arrow_length>15</arrow_length>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Group_2</name>
+      <x>860</x>
+      <y>230</y>
+      <width>100</width>
+      <height>1</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <scripts>
+        <script file="scripts/showCavity.py">
+          <pv_name>loc://cav-en(1)</pv_name>
+        </script>
+      </scripts>
+      <widget type="polyline" version="2.0.0">
+        <name>Polyline_21</name>
+        <width>40</width>
+        <height>1</height>
+        <points>
+          <point x="0.0" y="0.0">
+          </point>
+          <point x="40.0" y="0.0">
+          </point>
+        </points>
+        <line_color>
+          <color name="SECONDARY" red="202" green="0" blue="0">
+          </color>
+        </line_color>
+        <arrows>2</arrows>
+        <arrow_length>15</arrow_length>
+      </widget>
+      <widget type="polyline" version="2.0.0">
+        <name>Polyline_22</name>
+        <x>60</x>
+        <width>40</width>
+        <height>1</height>
+        <points>
+          <point x="0.0" y="0.0">
+          </point>
+          <point x="40.0" y="0.0">
+          </point>
+        </points>
+        <line_color>
+          <color name="PRIMARY" red="0" green="148" blue="202">
+          </color>
+        </line_color>
+        <arrows>1</arrows>
+        <arrow_length>15</arrow_length>
+      </widget>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>AMPLIFIER L</name>
+      <file>embedded/amplifier-l.bob</file>
+      <x>481</x>
+      <y>110</y>
+      <width>40</width>
+      <height>40</height>
+      <visible>$(showPreAmp)</visible>
+      <resize>2</resize>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_23</name>
+      <x>420</x>
+      <y>129</y>
+      <width>214</width>
+      <height>1</height>
+      <visible>$(showPreAmp)</visible>
+      <points>
+        <point x="0.0" y="0.9754579057296269">
+        </point>
+        <point x="214.00338363484116" y="0.0">
+        </point>
+      </points>
+      <line_color>
+        <color name="TEXT" red="25" green="25" blue="25">
+        </color>
+      </line_color>
+      <arrows>2</arrows>
+      <arrow_length>5</arrow_length>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_woCavity</name>
+      <x>22</x>
+      <y>130</y>
+      <width>738</width>
+      <height>89</height>
+      <points>
+        <point x="738.0" y="10.0">
+        </point>
+        <point x="800.0" y="10.0">
+        </point>
+        <point x="800.0" y="88.0">
+        </point>
+        <point x="0.0" y="89.0">
+        </point>
+        <point x="0.0" y="13.746572023212366">
+        </point>
+        <point x="35.0" y="13.746572023212366">
+        </point>
+      </points>
+      <line_color>
+        <color name="TEXT" red="25" green="25" blue="25">
+        </color>
+      </line_color>
+      <arrows>2</arrows>
+      <arrow_length>5</arrow_length>
+      <scripts>
+        <script file="scripts/hideCavity.py">
+          <pv_name>loc://cav-en(1)</pv_name>
+        </script>
+      </scripts>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_26</name>
+      <x>929</x>
+      <y>128</y>
+      <width>55</width>
+      <height>1</height>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="30.0" y="0.0">
+        </point>
+      </points>
+      <line_color>
+        <color name="TEXT" red="25" green="25" blue="25">
+        </color>
+      </line_color>
+      <arrow_length>5</arrow_length>
+      <scripts>
+        <script file="scripts/hideCavity.py">
+          <pv_name>loc://cav-en(1)</pv_name>
+        </script>
+      </scripts>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>AI1_2</name>
+      <x>700</x>
+      <y>238</y>
+      <width>120</width>
+      <height>30</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="rectangle" version="2.0.0">
+        <name>AI1 Border_2</name>
+        <width>120</width>
+        <height>30</height>
+        <line_width>2</line_width>
+        <line_color>
+          <color name="PRIMARY" red="0" green="148" blue="202">
+          </color>
+        </line_color>
+        <background_color>
+          <color name="Read_Background" red="230" green="235" blue="232">
+          </color>
+        </background_color>
+        <corner_width>15</corner_width>
+        <corner_height>15</corner_height>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>AI1 Text Update_2</name>
+        <pv_name>$(SYSTEM=LLRF):AI$(chCavRfl=4)-SMON-MAGAVG</pv_name>
+        <x>10</x>
+        <y>5</y>
+        <precision>3</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline AI2_2</name>
+      <x>755</x>
+      <y>205</y>
+      <width>121</width>
+      <height>25</height>
+      <visible>$(showPreAmp)</visible>
+      <points>
+        <point x="0.0" y="35.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="120.0" y="0.0">
+        </point>
+        <point x="120.0" y="22.0">
+        </point>
+      </points>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="PRIMARY" red="0" green="148" blue="202">
+        </color>
+      </line_color>
+    </widget>
+  </widget>
+</display>

@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>set-default-timing</name>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions execute_as_one="true">
+      <action type="write_pv">
+        <pv_name>TR-$(SYSTEM):DlyGen0-Delay-SP</pv_name>
+        <value>0.0</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-$(SYSTEM):DlyGen0-Ena-Sel</pv_name>
+        <value>1</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-$(SYSTEM):DlyGen0-Evt-Trig0-SP</pv_name>
+        <value>14</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-$(SYSTEM):DlyGen0-Polarity-Sel</pv_name>
+        <value>0</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-$(SYSTEM):DlyGen0-Width-SP</pv_name>
+        <value>4500.0</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-$(SYSTEM):DlyGen0-Delay-SP</pv_name>
+        <value>0.0</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-$(SYSTEM):DlyGen0-Label-I</pv_name>
+        <value> Blanking Pulse Electrosys RF Station</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-$(SYSTEM):DlyGen1-Ena-Sel</pv_name>
+        <value>1</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-$(SYSTEM):DlyGen1-Evt-Trig0-SP</pv_name>
+        <value>14</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-$(SYSTEM):DlyGen1-Polarity-Sel</pv_name>
+        <value>1</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-$(SYSTEM):DlyGen1-Width-SP</pv_name>
+        <value>4500.0</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-$(SYSTEM):DlyGen1-Label-I</pv_name>
+        <value> Blanking Pulse DBE RF Station</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-$(SYSTEM):DlyGen2-Delay-SP</pv_name>
+        <value>0.0</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-$(SYSTEM):DlyGen2-Ena-Sel</pv_name>
+        <value>1</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-$(SYSTEM):DlyGen2-Evt-Trig0-SP</pv_name>
+        <value>14</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-$(SYSTEM):DlyGen2-Polarity-Sel</pv_name>
+        <value>0</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-$(SYSTEM):DlyGen2-Width-SP</pv_name>
+        <value>1.0</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-$(SYSTEM):DlyGen3-Delay-SP</pv_name>
+        <value>500.0</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-$(SYSTEM):DlyGen3-Ena-Sel</pv_name>
+        <value>1</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-$(SYSTEM):DlyGen3-Evt-Trig0-SP</pv_name>
+        <value>14</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-$(SYSTEM):DlyGen3-Polarity-Sel</pv_name>
+        <value>0</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-$(SYSTEM):DlyGen3-Width-SP</pv_name>
+        <value>3200.0</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-$(SYSTEM):DlyGen4-Delay-SP</pv_name>
+        <value>0.0</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-$(SYSTEM):DlyGen4-Ena-Sel</pv_name>
+        <value>1</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-$(SYSTEM):DlyGen4-Evt-Trig0-SP</pv_name>
+        <value>14</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-$(SYSTEM):DlyGen4-Polarity-Sel</pv_name>
+        <value>0</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-$(SYSTEM):DlyGen4-Width-SP</pv_name>
+        <value>1000.0</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-$(SYSTEM):DlyGen5-Delay-SP</pv_name>
+        <value>0.0</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-$(SYSTEM):DlyGen5-Ena-Sel</pv_name>
+        <value>1</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-$(SYSTEM):DlyGen5-Evt-Trig0-SP</pv_name>
+        <value>15</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-$(SYSTEM):DlyGen5-Polarity-Sel</pv_name>
+        <value>0</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-$(SYSTEM):DlyGen5-Width-SP</pv_name>
+        <value>1000.0</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-$(SYSTEM):DlyGen6-Delay-SP</pv_name>
+        <value>0.0</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-$(SYSTEM):DlyGen6-Ena-Sel</pv_name>
+        <value>1</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-$(SYSTEM):DlyGen6-Evt-Trig0-SP</pv_name>
+        <value>16</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-$(SYSTEM):DlyGen6-Polarity-Sel</pv_name>
+        <value>0</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-$(SYSTEM):DlyGen6-Width-SP</pv_name>
+        <value>1000.0</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-$(SYSTEM):DlyGen7-Delay-SP</pv_name>
+        <value>0.0</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-$(SYSTEM):DlyGen7-Ena-Sel</pv_name>
+        <value>1</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-$(SYSTEM):DlyGen7-Evt-Trig0-SP</pv_name>
+        <value>17</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-$(SYSTEM):DlyGen7-Polarity-Sel</pv_name>
+        <value>0</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-$(SYSTEM):DlyGen7-Width-SP</pv_name>
+        <value>1000.0</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-$(SYSTEM):DlyGen8-Delay-SP</pv_name>
+        <value>0.0</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-$(SYSTEM):DlyGen8-Ena-Sel</pv_name>
+        <value>1</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-$(SYSTEM):DlyGen8-Evt-Trig0-SP</pv_name>
+        <value>40</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-$(SYSTEM):DlyGen8-Polarity-Sel</pv_name>
+        <value>0</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-$(SYSTEM):DlyGen8-Width-SP</pv_name>
+        <value>1000.0</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-$(SYSTEM):OutBack0-Src-Pulse-SP</pv_name>
+        <value>4</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-$(SYSTEM):OutBack1-Src-Pulse-SP</pv_name>
+        <value>5</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-$(SYSTEM):OutBack2-Src-Pulse-SP</pv_name>
+        <value>6</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-$(SYSTEM):OutBack3-Src-Pulse-SP</pv_name>
+        <value>7</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-$(SYSTEM):OutBack4-Src-Pulse-SP</pv_name>
+        <value>8</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-$(SYSTEM):OutFP0-Src-Pulse-SP</pv_name>
+        <value>0</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-LLRF-2:OutFP0-Src-Pulse-SP</pv_name>
+        <value>3</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-$(SYSTEM):OutFP1-Src-Pulse-SP</pv_name>
+        <value>0</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-LLRF-1:OutFP2-Src-Pulse-SP</pv_name>
+        <value>3</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-LLRF-1:OutFP3-Src-Pulse-SP</pv_name>
+        <value>3</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-LLRF-2:OutFP2-Src-Pulse-SP</pv_name>
+        <value>1</value>
+        <description>Write PV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>TR-LLRF-2:OutFP3-Src-Pulse-SP</pv_name>
+        <value>1</value>
+        <description>Write PV</description>
+      </action>
+    </actions>
+    <text>Set Default
+Timing</text>
+    <width>130</width>
+    <height>60</height>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+</display>

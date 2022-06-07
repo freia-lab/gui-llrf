@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Label Descriptions</name>
+  <width>160</width>
+  <height>300</height>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(SYSTEM):AI0$(SUFIX).DESC</pv_name>
+    <width>150</width>
+    <transparent>true</transparent>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_1</name>
+    <pv_name>$(SYSTEM):AI1$(SUFIX).DESC</pv_name>
+    <y>30</y>
+    <width>150</width>
+    <transparent>true</transparent>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_2</name>
+    <pv_name>$(SYSTEM):AI2$(SUFIX).DESC</pv_name>
+    <y>60</y>
+    <width>150</width>
+    <transparent>true</transparent>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_3</name>
+    <pv_name>$(SYSTEM):AI3$(SUFIX).DESC</pv_name>
+    <y>90</y>
+    <width>150</width>
+    <transparent>true</transparent>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_4</name>
+    <pv_name>$(SYSTEM):AI4$(SUFIX).DESC</pv_name>
+    <y>120</y>
+    <width>150</width>
+    <transparent>true</transparent>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_5</name>
+    <pv_name>$(SYSTEM):AI5$(SUFIX).DESC</pv_name>
+    <y>150</y>
+    <width>150</width>
+    <transparent>true</transparent>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_6</name>
+    <pv_name>$(SYSTEM):AI6$(SUFIX).DESC</pv_name>
+    <y>180</y>
+    <width>150</width>
+    <transparent>true</transparent>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_7</name>
+    <pv_name>$(SYSTEM):AI7$(SUFIX).DESC</pv_name>
+    <y>210</y>
+    <width>150</width>
+    <transparent>true</transparent>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_8</name>
+    <pv_name>$(SYSTEM):AI8$(SUFIX).DESC</pv_name>
+    <y>240</y>
+    <width>150</width>
+    <transparent>true</transparent>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_9</name>
+    <pv_name>$(SYSTEM):AI9$(SUFIX).DESC</pv_name>
+    <y>270</y>
+    <width>150</width>
+    <transparent>true</transparent>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+</display>

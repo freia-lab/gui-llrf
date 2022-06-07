@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Generate/Load Table</name>
+  <width>450</width>
+  <height>570</height>
+  <widget type="group" version="2.0.0">
+    <name>Timing-Group</name>
+    <width>450</width>
+    <height>570</height>
+    <style>3</style>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_19</name>
+      <y>30</y>
+      <width>450</width>
+      <height>540</height>
+      <line_color>
+        <color name="GROUP-BORDER" red="150" green="155" blue="151">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_20</name>
+      <width>450</width>
+      <height>30</height>
+      <line_width>0</line_width>
+      <background_color>
+        <color name="GROUP-BORDER" red="150" green="155" blue="151">
+        </color>
+      </background_color>
+      <corner_width>10</corner_width>
+      <corner_height>10</corner_height>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_21</name>
+      <y>10</y>
+      <width>450</width>
+      <line_width>0</line_width>
+      <background_color>
+        <color name="GROUP-BORDER" red="150" green="155" blue="151">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Group Title_4</name>
+      <text>Generate or Load a Table</text>
+      <x>10</x>
+      <width>440</width>
+      <height>30</height>
+      <font>
+        <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Combo Box</name>
+      <pv_name>loc://ARGTYPE("fixed")</pv_name>
+      <x>20</x>
+      <y>220</y>
+      <width>130</width>
+      <items>
+        <item>fixed</item>
+        <item>ramp</item>
+        <item>sin</item>
+      </items>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_27</name>
+      <pv_name>loc://ARG1(0)</pv_name>
+      <x>170</x>
+      <y>220</y>
+      <width>80</width>
+      <height>30</height>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_28</name>
+      <pv_name>loc://ARG2(0.0)</pv_name>
+      <x>260</x>
+      <y>220</y>
+      <width>80</width>
+      <height>30</height>
+      <format>1</format>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_29</name>
+      <pv_name>loc://ARG3(0.0)</pv_name>
+      <x>350</x>
+      <y>220</y>
+      <width>80</width>
+      <height>30</height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_43</name>
+      <text>ARG1</text>
+      <x>170</x>
+      <y>200</y>
+      <width>80</width>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_44</name>
+      <text>ARG2</text>
+      <x>260</x>
+      <y>200</y>
+      <width>80</width>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_45</name>
+      <text>ARG3</text>
+      <x>350</x>
+      <y>200</y>
+      <width>80</width>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_46</name>
+      <text>fixed</text>
+      <x>60</x>
+      <y>270</y>
+      <width>80</width>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_47</name>
+      <text>ramp</text>
+      <x>60</x>
+      <y>300</y>
+      <width>80</width>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_48</name>
+      <text>sin</text>
+      <x>60</x>
+      <y>330</y>
+      <width>80</width>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_49</name>
+      <text>elem num</text>
+      <x>150</x>
+      <y>270</y>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_50</name>
+      <text>value</text>
+      <x>260</x>
+      <y>270</y>
+      <width>80</width>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_51</name>
+      <text>/</text>
+      <x>350</x>
+      <y>270</y>
+      <width>80</width>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_52</name>
+      <text>elem num</text>
+      <x>150</x>
+      <y>300</y>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_53</name>
+      <text>elem num</text>
+      <x>150</x>
+      <y>330</y>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_54</name>
+      <text>start point</text>
+      <x>260</x>
+      <y>300</y>
+      <width>80</width>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_55</name>
+      <text>amplitude</text>
+      <x>260</x>
+      <y>330</y>
+      <width>80</width>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_56</name>
+      <text>stop point</text>
+      <x>350</x>
+      <y>300</y>
+      <width>80</width>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_57</name>
+      <text>frequency</text>
+      <x>350</x>
+      <y>330</y>
+      <width>80</width>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_58</name>
+      <text>First element in the generated table will always be zero to prevent a DC-output before PULSE_COMMING and after PULSE_END triggers</text>
+      <x>20</x>
+      <y>360</y>
+      <width>410</width>
+      <height>80</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Group Title_10</name>
+      <text>Parameters for table generation</text>
+      <y>160</y>
+      <width>450</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_59</name>
+      <text>MAX elem</text>
+      <x>70</x>
+      <y>450</y>
+      <width>80</width>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update</name>
+      <pv_name>$(SYSTEM):$(CTRLTYPE)-MAXNSAMPLES</pv_name>
+      <x>170</x>
+      <y>450</y>
+      <width>120</width>
+      <height>30</height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_60</name>
+      <text>Destination File</text>
+      <x>10</x>
+      <y>490</y>
+      <width>140</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_30</name>
+      <pv_name>loc://DESTFILE("")</pv_name>
+      <x>170</x>
+      <y>490</y>
+      <width>120</width>
+      <height>30</height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_61</name>
+      <text>Source File</text>
+      <x>10</x>
+      <y>530</y>
+      <width>140</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_31</name>
+      <pv_name>loc://SRCFILE("")</pv_name>
+      <x>170</x>
+      <y>530</y>
+      <width>120</width>
+      <height>30</height>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_7</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>loc://genTable</pv_name>
+          <value>1</value>
+          <description>Write PV</description>
+        </action>
+      </actions>
+      <text>Generate Table</text>
+      <x>10</x>
+      <y>90</y>
+      <width>130</width>
+      <height>60</height>
+      <scripts>
+        <script file="../scripts/callGenTable.py" check_connections="false">
+          <pv_name>loc://genTable</pv_name>
+          <pv_name trigger="false">loc://PVDEST</pv_name>
+          <pv_name trigger="false">loc://ARGTYPE</pv_name>
+          <pv_name trigger="false">loc://ARG1</pv_name>
+          <pv_name trigger="false">loc://ARG2</pv_name>
+          <pv_name trigger="false">loc://ARG3</pv_name>
+          <pv_name trigger="false">loc://DESTFILE</pv_name>
+        </script>
+      </scripts>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_8</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(SYSTEM):$(CTRLTYPE)-$(TABLE)-WRTBL</pv_name>
+          <value>1</value>
+          <description>Write PV</description>
+        </action>
+      </actions>
+      <text>Commit Tables</text>
+      <x>160</x>
+      <y>90</y>
+      <width>130</width>
+      <height>60</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_9</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>loc://loadTable</pv_name>
+          <value>1</value>
+          <description>Write PV</description>
+        </action>
+      </actions>
+      <text>Load Tables</text>
+      <x>310</x>
+      <y>90</y>
+      <width>130</width>
+      <height>60</height>
+      <scripts>
+        <script file="../scripts/callImpTable.py">
+          <pv_name>loc://loadTable</pv_name>
+          <pv_name trigger="false">loc://PVDEST</pv_name>
+          <pv_name trigger="false">loc://SRCFILE</pv_name>
+        </script>
+      </scripts>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Group Title_11</name>
+      <text>$(SYSTEM):$(CTRLTYPE)-$(TABLE)-$(CHANNEL)</text>
+      <y>40</y>
+      <width>450</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry</name>
+      <pv_name>loc://PVDEST("$(SYSTEM):$(CTRLTYPE)-$(TABLE)-$(CHANNEL)")</pv_name>
+      <x>340</x>
+      <y>520</y>
+      <height>40</height>
+      <visible>false</visible>
+    </widget>
+  </widget>
+</display>

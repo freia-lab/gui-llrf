@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>CAVITY H</name>
+  <width>125</width>
+  <height>60</height>
+  <widget type="ellipse" version="2.0.0">
+    <name>Ellipse_2</name>
+    <x>5</x>
+    <y>5</y>
+    <width>20</width>
+    <line_color>
+      <color name="TEXT" red="25" green="25" blue="25">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_1</name>
+    <x>15</x>
+    <y>5</y>
+    <width>95</width>
+    <height>50</height>
+    <line_color>
+      <color name="TEXT" red="25" green="25" blue="25">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>Ellipse</name>
+    <x>100</x>
+    <y>5</y>
+    <width>20</width>
+    <line_color>
+      <color name="TEXT" red="25" green="25" blue="25">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_2</name>
+    <x>14</x>
+    <y>8</y>
+    <width>5</width>
+    <height>44</height>
+    <line_width>0</line_width>
+    <line_color>
+      <color name="Background" red="220" green="225" blue="221">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+  </widget>
+</display>

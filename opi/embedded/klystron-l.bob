@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>KLYSTRON L</name>
+  <width>130</width>
+  <height>130</height>
+  <widget type="polygon" version="2.0.0">
+    <name>Polygon</name>
+    <x>5</x>
+    <y>5</y>
+    <width>120</width>
+    <height>120</height>
+    <line_color>
+      <color name="TEXT" red="25" green="25" blue="25">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="220" green="225" blue="221" alpha="0">
+      </color>
+    </background_color>
+    <points>
+      <point x="0.0" y="120.0">
+      </point>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="120.0" y="60.0">
+      </point>
+    </points>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>Ellipse</name>
+    <x>20</x>
+    <y>40</y>
+    <width>50</width>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="TEXT" red="25" green="25" blue="25">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="220" green="225" blue="221" alpha="0">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>K</text>
+    <x>20</x>
+    <y>40</y>
+    <width>50</width>
+    <height>50</height>
+    <font>
+      <font family="Source Code Pro" style="BOLD" size="36.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+</display>

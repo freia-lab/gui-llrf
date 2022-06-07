@@ -1,0 +1,791 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>timing</name>
+  <widget type="group" version="2.0.0">
+    <name>Grouping_Vector</name>
+    <width>590</width>
+    <height>580</height>
+    <style>3</style>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_51</name>
+      <y>30</y>
+      <width>590</width>
+      <height>550</height>
+      <line_color>
+        <color name="GROUP-BORDER" red="150" green="155" blue="151">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_52</name>
+      <width>590</width>
+      <height>30</height>
+      <line_width>0</line_width>
+      <background_color>
+        <color name="GROUP-BORDER" red="150" green="155" blue="151">
+        </color>
+      </background_color>
+      <corner_width>10</corner_width>
+      <corner_height>10</corner_height>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_53</name>
+      <y>10</y>
+      <width>590</width>
+      <line_width>0</line_width>
+      <background_color>
+        <color name="GROUP-BORDER" red="150" green="155" blue="151">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Group Title_19</name>
+      <text>Timing Receiver - Front Panel Outputs</text>
+      <width>590</width>
+      <height>30</height>
+      <font>
+        <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_124</name>
+      <class>HEADER3</class>
+      <text>Pulsers</text>
+      <x>105</x>
+      <y>40</y>
+      <width>350</width>
+      <height>30</height>
+      <font use_class="true">
+        <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="GROUP-TEXT" red="25" green="25" blue="25">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <transparent use_class="true">true</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_127</name>
+      <class>HEADER3</class>
+      <text>Outputs</text>
+      <x>110</x>
+      <y>450</y>
+      <width>350</width>
+      <height>30</height>
+      <font use_class="true">
+        <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="GROUP-TEXT" red="25" green="25" blue="25">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <transparent use_class="true">true</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Group</name>
+      <macros>
+        <N>0</N>
+      </macros>
+      <x>22</x>
+      <y>70</y>
+      <width>547</width>
+      <height>87</height>
+      <style>2</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label_138</name>
+        <class>CAPTION</class>
+        <text>Delay</text>
+        <x>175</x>
+        <y>30</y>
+        <width>80</width>
+        <height>30</height>
+        <foreground_color use_class="true">
+          <color name="Text" red="25" green="25" blue="25">
+          </color>
+        </foreground_color>
+        <horizontal_alignment use_class="true">2</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_139</name>
+        <class>CAPTION</class>
+        <text>Width</text>
+        <x>395</x>
+        <y>30</y>
+        <width>80</width>
+        <height>30</height>
+        <foreground_color use_class="true">
+          <color name="Text" red="25" green="25" blue="25">
+          </color>
+        </foreground_color>
+        <horizontal_alignment use_class="true">2</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_137</name>
+        <class>HEADER3</class>
+        <text>Pulser $(N)</text>
+        <width>75</width>
+        <height>30</height>
+        <font use_class="true">
+          <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+          </font>
+        </font>
+        <background_color use_class="true">
+          <color name="Background" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <transparent use_class="true">true</transparent>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Entry_74</name>
+        <pv_name>TR-$(SYSTEM):DlyGen$(N)-Delay-SP</pv_name>
+        <x>135</x>
+        <y>60</y>
+        <width>90</width>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_78</name>
+        <pv_name>TR-$(SYSTEM):DlyGen$(N)-Delay-RB</pv_name>
+        <x>235</x>
+        <y>60</y>
+        <width>90</width>
+        <format>1</format>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Entry_75</name>
+        <pv_name>TR-$(SYSTEM):DlyGen$(N)-Width-SP</pv_name>
+        <x>350</x>
+        <y>60</y>
+        <width>90</width>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_79</name>
+        <pv_name>TR-$(SYSTEM):DlyGen$(N)-Width-RB</pv_name>
+        <x>450</x>
+        <y>60</y>
+        <width>90</width>
+        <format>1</format>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_140</name>
+        <class>CAPTION</class>
+        <text>On</text>
+        <x>10</x>
+        <y>30</y>
+        <width>30</width>
+        <foreground_color use_class="true">
+          <color name="Text" red="25" green="25" blue="25">
+          </color>
+        </foreground_color>
+        <horizontal_alignment use_class="true">2</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
+      </widget>
+      <widget type="slide_button" version="2.0.0">
+        <name>Slide Button_5</name>
+        <pv_name>TR-$(SYSTEM):DlyGen$(N)-Ena-Sel</pv_name>
+        <label></label>
+        <x>60</x>
+        <y>30</y>
+        <width>35</width>
+        <height>20</height>
+      </widget>
+      <widget type="combo" version="2.0.0">
+        <name>Combo Box_3</name>
+        <pv_name>TR-$(SYSTEM):DlyGen$(N)-Polarity-Sel</pv_name>
+        <x>5</x>
+        <y>60</y>
+        <width>120</width>
+        <height>20</height>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Entry_76</name>
+        <pv_name>TR-$(SYSTEM):DlyGen$(N)-Label-I</pv_name>
+        <x>135</x>
+        <y>5</y>
+        <width>400</width>
+        <format>6</format>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Group_1</name>
+      <macros>
+        <N>1</N>
+      </macros>
+      <x>22</x>
+      <y>165</y>
+      <width>547</width>
+      <height>87</height>
+      <style>2</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label_142</name>
+        <class>CAPTION</class>
+        <text>Delay</text>
+        <x>175</x>
+        <y>30</y>
+        <width>80</width>
+        <height>30</height>
+        <foreground_color use_class="true">
+          <color name="Text" red="25" green="25" blue="25">
+          </color>
+        </foreground_color>
+        <horizontal_alignment use_class="true">2</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_143</name>
+        <class>CAPTION</class>
+        <text>Width</text>
+        <x>395</x>
+        <y>30</y>
+        <width>80</width>
+        <height>30</height>
+        <foreground_color use_class="true">
+          <color name="Text" red="25" green="25" blue="25">
+          </color>
+        </foreground_color>
+        <horizontal_alignment use_class="true">2</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_144</name>
+        <class>HEADER3</class>
+        <text>Pulser $(N)</text>
+        <width>75</width>
+        <height>30</height>
+        <font use_class="true">
+          <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+          </font>
+        </font>
+        <background_color use_class="true">
+          <color name="Background" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <transparent use_class="true">true</transparent>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Entry_77</name>
+        <pv_name>TR-$(SYSTEM):DlyGen$(N)-Delay-SP</pv_name>
+        <x>135</x>
+        <y>60</y>
+        <width>90</width>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_81</name>
+        <pv_name>TR-$(SYSTEM):DlyGen$(N)-Delay-RB</pv_name>
+        <x>235</x>
+        <y>60</y>
+        <width>90</width>
+        <format>1</format>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Entry_78</name>
+        <pv_name>TR-$(SYSTEM):DlyGen$(N)-Width-SP</pv_name>
+        <x>350</x>
+        <y>60</y>
+        <width>90</width>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_82</name>
+        <pv_name>TR-$(SYSTEM):DlyGen$(N)-Width-RB</pv_name>
+        <x>450</x>
+        <y>60</y>
+        <width>90</width>
+        <format>1</format>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_145</name>
+        <class>CAPTION</class>
+        <text>On</text>
+        <x>10</x>
+        <y>30</y>
+        <width>30</width>
+        <foreground_color use_class="true">
+          <color name="Text" red="25" green="25" blue="25">
+          </color>
+        </foreground_color>
+        <horizontal_alignment use_class="true">2</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
+      </widget>
+      <widget type="slide_button" version="2.0.0">
+        <name>Slide Button_6</name>
+        <pv_name>TR-$(SYSTEM):DlyGen$(N)-Ena-Sel</pv_name>
+        <label></label>
+        <x>60</x>
+        <y>30</y>
+        <width>35</width>
+        <height>20</height>
+      </widget>
+      <widget type="combo" version="2.0.0">
+        <name>Combo Box_4</name>
+        <pv_name>TR-$(SYSTEM):DlyGen$(N)-Polarity-Sel</pv_name>
+        <x>5</x>
+        <y>60</y>
+        <width>120</width>
+        <height>20</height>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Entry_79</name>
+        <pv_name>TR-$(SYSTEM):DlyGen$(N)-Label-I</pv_name>
+        <x>135</x>
+        <y>5</y>
+        <width>400</width>
+        <format>6</format>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Group_2</name>
+      <macros>
+        <N>2</N>
+      </macros>
+      <x>22</x>
+      <y>260</y>
+      <width>547</width>
+      <height>87</height>
+      <style>2</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label_146</name>
+        <class>CAPTION</class>
+        <text>Delay</text>
+        <x>175</x>
+        <y>30</y>
+        <width>80</width>
+        <height>30</height>
+        <foreground_color use_class="true">
+          <color name="Text" red="25" green="25" blue="25">
+          </color>
+        </foreground_color>
+        <horizontal_alignment use_class="true">2</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_147</name>
+        <class>CAPTION</class>
+        <text>Width</text>
+        <x>395</x>
+        <y>30</y>
+        <width>80</width>
+        <height>30</height>
+        <foreground_color use_class="true">
+          <color name="Text" red="25" green="25" blue="25">
+          </color>
+        </foreground_color>
+        <horizontal_alignment use_class="true">2</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_148</name>
+        <class>HEADER3</class>
+        <text>Pulser $(N)</text>
+        <width>75</width>
+        <height>30</height>
+        <font use_class="true">
+          <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+          </font>
+        </font>
+        <background_color use_class="true">
+          <color name="Background" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <transparent use_class="true">true</transparent>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Entry_80</name>
+        <pv_name>TR-$(SYSTEM):DlyGen$(N)-Delay-SP</pv_name>
+        <x>135</x>
+        <y>60</y>
+        <width>90</width>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_83</name>
+        <pv_name>TR-$(SYSTEM):DlyGen$(N)-Delay-RB</pv_name>
+        <x>235</x>
+        <y>60</y>
+        <width>90</width>
+        <format>1</format>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Entry_81</name>
+        <pv_name>TR-$(SYSTEM):DlyGen$(N)-Width-SP</pv_name>
+        <x>350</x>
+        <y>60</y>
+        <width>90</width>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_84</name>
+        <pv_name>TR-$(SYSTEM):DlyGen$(N)-Width-RB</pv_name>
+        <x>450</x>
+        <y>60</y>
+        <width>90</width>
+        <format>1</format>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_149</name>
+        <class>CAPTION</class>
+        <text>On</text>
+        <x>10</x>
+        <y>30</y>
+        <width>30</width>
+        <foreground_color use_class="true">
+          <color name="Text" red="25" green="25" blue="25">
+          </color>
+        </foreground_color>
+        <horizontal_alignment use_class="true">2</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
+      </widget>
+      <widget type="slide_button" version="2.0.0">
+        <name>Slide Button_7</name>
+        <pv_name>TR-$(SYSTEM):DlyGen$(N)-Ena-Sel</pv_name>
+        <label></label>
+        <x>60</x>
+        <y>30</y>
+        <width>35</width>
+        <height>20</height>
+      </widget>
+      <widget type="combo" version="2.0.0">
+        <name>Combo Box_5</name>
+        <pv_name>TR-$(SYSTEM):DlyGen$(N)-Polarity-Sel</pv_name>
+        <x>5</x>
+        <y>60</y>
+        <width>120</width>
+        <height>20</height>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Entry_82</name>
+        <pv_name>TR-$(SYSTEM):DlyGen$(N)-Label-I</pv_name>
+        <x>135</x>
+        <y>5</y>
+        <width>400</width>
+        <format>6</format>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Group_3</name>
+      <macros>
+        <N>3</N>
+      </macros>
+      <x>22</x>
+      <y>355</y>
+      <width>547</width>
+      <height>87</height>
+      <style>2</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label_150</name>
+        <class>CAPTION</class>
+        <text>Delay</text>
+        <x>175</x>
+        <y>30</y>
+        <width>80</width>
+        <height>30</height>
+        <foreground_color use_class="true">
+          <color name="Text" red="25" green="25" blue="25">
+          </color>
+        </foreground_color>
+        <horizontal_alignment use_class="true">2</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_151</name>
+        <class>CAPTION</class>
+        <text>Width</text>
+        <x>395</x>
+        <y>30</y>
+        <width>80</width>
+        <height>30</height>
+        <foreground_color use_class="true">
+          <color name="Text" red="25" green="25" blue="25">
+          </color>
+        </foreground_color>
+        <horizontal_alignment use_class="true">2</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_152</name>
+        <class>HEADER3</class>
+        <text>Pulser $(N)</text>
+        <width>75</width>
+        <height>30</height>
+        <font use_class="true">
+          <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+          </font>
+        </font>
+        <background_color use_class="true">
+          <color name="Background" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <transparent use_class="true">true</transparent>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Entry_83</name>
+        <pv_name>TR-$(SYSTEM):DlyGen$(N)-Delay-SP</pv_name>
+        <x>135</x>
+        <y>60</y>
+        <width>90</width>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_85</name>
+        <pv_name>TR-$(SYSTEM):DlyGen$(N)-Delay-RB</pv_name>
+        <x>235</x>
+        <y>60</y>
+        <width>90</width>
+        <format>1</format>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Entry_84</name>
+        <pv_name>TR-$(SYSTEM):DlyGen$(N)-Width-SP</pv_name>
+        <x>350</x>
+        <y>60</y>
+        <width>90</width>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_86</name>
+        <pv_name>TR-$(SYSTEM):DlyGen$(N)-Width-RB</pv_name>
+        <x>450</x>
+        <y>60</y>
+        <width>90</width>
+        <format>1</format>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_153</name>
+        <class>CAPTION</class>
+        <text>On</text>
+        <x>10</x>
+        <y>30</y>
+        <width>30</width>
+        <foreground_color use_class="true">
+          <color name="Text" red="25" green="25" blue="25">
+          </color>
+        </foreground_color>
+        <horizontal_alignment use_class="true">2</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
+      </widget>
+      <widget type="slide_button" version="2.0.0">
+        <name>Slide Button_8</name>
+        <pv_name>TR-$(SYSTEM):DlyGen$(N)-Ena-Sel</pv_name>
+        <label></label>
+        <x>60</x>
+        <y>30</y>
+        <width>35</width>
+        <height>20</height>
+      </widget>
+      <widget type="combo" version="2.0.0">
+        <name>Combo Box_6</name>
+        <pv_name>TR-$(SYSTEM):DlyGen$(N)-Polarity-Sel</pv_name>
+        <x>5</x>
+        <y>60</y>
+        <width>120</width>
+        <height>20</height>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Entry_85</name>
+        <pv_name>TR-$(SYSTEM):DlyGen$(N)-Label-I</pv_name>
+        <x>135</x>
+        <y>5</y>
+        <width>400</width>
+        <format>6</format>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Group</name>
+      <x>21</x>
+      <y>479</y>
+      <width>548</width>
+      <height>85</height>
+      <style>2</style>
+      <transparent>true</transparent>
+      <widget type="group" version="2.0.0">
+        <name>Group</name>
+        <macros>
+          <N>0</N>
+        </macros>
+        <y>5</y>
+        <width>220</width>
+        <height>35</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="label" version="2.0.0">
+          <name>Label_136</name>
+          <class>HEADER3</class>
+          <text>OUT$(N)</text>
+          <x>10</x>
+          <width>80</width>
+          <height>30</height>
+          <font use_class="true">
+            <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+            </font>
+          </font>
+          <background_color use_class="true">
+            <color name="Background" red="220" green="225" blue="221">
+            </color>
+          </background_color>
+          <transparent use_class="true">true</transparent>
+          <horizontal_alignment>2</horizontal_alignment>
+          <vertical_alignment>1</vertical_alignment>
+        </widget>
+        <widget type="combo" version="2.0.0">
+          <name>Combo Box_2</name>
+          <pv_name>TR-$(SYSTEM):OutFP$(N)-Src-Pulse-SP</pv_name>
+          <x>106</x>
+          <y>5</y>
+          <width>110</width>
+          <height>20</height>
+        </widget>
+      </widget>
+      <widget type="group" version="2.0.0">
+        <name>Group_4</name>
+        <macros>
+          <N>1</N>
+        </macros>
+        <y>45</y>
+        <width>220</width>
+        <height>35</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="label" version="2.0.0">
+          <name>Label_154</name>
+          <class>HEADER3</class>
+          <text>OUT$(N)</text>
+          <x>10</x>
+          <width>80</width>
+          <height>30</height>
+          <font use_class="true">
+            <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+            </font>
+          </font>
+          <background_color use_class="true">
+            <color name="Background" red="220" green="225" blue="221">
+            </color>
+          </background_color>
+          <transparent use_class="true">true</transparent>
+          <horizontal_alignment>2</horizontal_alignment>
+          <vertical_alignment>1</vertical_alignment>
+        </widget>
+        <widget type="combo" version="2.0.0">
+          <name>Combo Box_7</name>
+          <pv_name>TR-$(SYSTEM):OutFP$(N)-Src-Pulse-SP</pv_name>
+          <x>106</x>
+          <y>5</y>
+          <width>110</width>
+          <height>20</height>
+        </widget>
+      </widget>
+      <widget type="group" version="2.0.0">
+        <name>Group_5</name>
+        <macros>
+          <N>2</N>
+        </macros>
+        <x>283</x>
+        <y>5</y>
+        <width>220</width>
+        <height>35</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="label" version="2.0.0">
+          <name>Label_155</name>
+          <class>HEADER3</class>
+          <text>OUT$(N)</text>
+          <x>10</x>
+          <width>80</width>
+          <height>30</height>
+          <font use_class="true">
+            <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+            </font>
+          </font>
+          <background_color use_class="true">
+            <color name="Background" red="220" green="225" blue="221">
+            </color>
+          </background_color>
+          <transparent use_class="true">true</transparent>
+          <horizontal_alignment>2</horizontal_alignment>
+          <vertical_alignment>1</vertical_alignment>
+        </widget>
+        <widget type="combo" version="2.0.0">
+          <name>Combo Box_8</name>
+          <pv_name>TR-$(SYSTEM):OutFP$(N)-Src-Pulse-SP</pv_name>
+          <x>106</x>
+          <y>5</y>
+          <width>110</width>
+          <height>20</height>
+        </widget>
+      </widget>
+      <widget type="group" version="2.0.0">
+        <name>Group_6</name>
+        <macros>
+          <N>3</N>
+        </macros>
+        <x>283</x>
+        <y>45</y>
+        <width>220</width>
+        <height>35</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="label" version="2.0.0">
+          <name>Label_156</name>
+          <class>HEADER3</class>
+          <text>OUT$(N)</text>
+          <x>10</x>
+          <width>80</width>
+          <height>30</height>
+          <font use_class="true">
+            <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+            </font>
+          </font>
+          <background_color use_class="true">
+            <color name="Background" red="220" green="225" blue="221">
+            </color>
+          </background_color>
+          <transparent use_class="true">true</transparent>
+          <horizontal_alignment>2</horizontal_alignment>
+          <vertical_alignment>1</vertical_alignment>
+        </widget>
+        <widget type="combo" version="2.0.0">
+          <name>Combo Box_9</name>
+          <pv_name>TR-$(SYSTEM):OutFP$(N)-Src-Pulse-SP</pv_name>
+          <x>106</x>
+          <y>5</y>
+          <width>110</width>
+          <height>20</height>
+        </widget>
+      </widget>
+    </widget>
+  </widget>
+</display>

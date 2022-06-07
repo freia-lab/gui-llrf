@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Display</name>
+  <width>400</width>
+  <height>30</height>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Fixed $(PI_TYPE)</text>
+    <x>2</x>
+    <y>2</y>
+    <width>68</width>
+    <height>30</height>
+  </widget>
+  <widget type="slide_button" version="2.0.0">
+    <name>Slide Button</name>
+    <pv_name>$(SYSTEM):$(PI_TYPE)-FIXED$(CT)EN</pv_name>
+    <label></label>
+    <x>80</x>
+    <y>2</y>
+    <width>51</width>
+    <height>20</height>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED</name>
+    <pv_name>$(SYSTEM):$(PI_TYPE)-FIXED$(CT)EN-RBV</pv_name>
+    <x>140</x>
+    <y>2</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry</name>
+    <pv_name>$(SYSTEM):$(PI_TYPE)-FIXED$(CT)VAL</pv_name>
+    <x>180</x>
+    <y>2</y>
+    <height>30</height>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(SYSTEM):$(PI_TYPE)-FIXED$(CT)VAL-RBV</pv_name>
+    <x>296</x>
+    <y>2</y>
+    <height>30</height>
+  </widget>
+</display>

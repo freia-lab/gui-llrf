@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Ilock Item</name>
+  <width>520</width>
+  <height>40</height>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <class>CAPTION</class>
+    <text>Interlock $(ILOCK)</text>
+    <width>90</width>
+    <height>30</height>
+    <foreground_color use_class="true">
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </foreground_color>
+    <horizontal_alignment use_class="true">2</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>Combo Box</name>
+    <pv_name>$(SYSTEM):ILOCK$(ILOCK)-CONDITION</pv_name>
+    <x>120</x>
+    <width>140</width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(SYSTEM):ILOCK$(ILOCK)-CONDITION-RBV</pv_name>
+    <x>270</x>
+    <width>140</width>
+    <height>30</height>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_1</name>
+    <pv_name>$(SYSTEM):ILOCK$(ILOCK)-HARINP</pv_name>
+    <x>430</x>
+    <width>80</width>
+    <height>30</height>
+  </widget>
+</display>

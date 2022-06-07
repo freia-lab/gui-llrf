@@ -1,0 +1,1293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>LLRF Main</name>
+  <width>1630</width>
+  <height>850</height>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle</name>
+    <class>TITLE-BAR</class>
+    <x use_class="true">0</x>
+    <y use_class="true">0</y>
+    <width>1630</width>
+    <height use_class="true">50</height>
+    <line_width use_class="true">0</line_width>
+    <background_color use_class="true">
+      <color name="PRIMARY-HEADER-BACKGROUND" red="151" green="188" blue="202">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Title</name>
+    <class>TITLE</class>
+    <text>$(SYSTEM=LLRF)</text>
+    <x use_class="true">20</x>
+    <y use_class="true">0</y>
+    <width>1590</width>
+    <height use_class="true">50</height>
+    <font use_class="true">
+      <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="HEADER-TEXT" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <transparent use_class="true">true</transparent>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <wrap_words use_class="true">false</wrap_words>
+  </widget>
+  <widget type="tabs" version="2.0.0">
+    <name>Tabs</name>
+    <tabs>
+      <tab>
+        <name>Synoptic</name>
+        <children>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display</name>
+            <file>LLRF-main-synoptic.bob</file>
+            <x>10</x>
+            <y>10</y>
+            <width>1010</width>
+            <height>700</height>
+            <resize>2</resize>
+          </widget>
+          <widget type="textentry" version="3.0.0">
+            <name>Text Entry_9</name>
+            <x>1213</x>
+            <y>74</y>
+            <width>50</width>
+          </widget>
+          <widget type="textentry" version="3.0.0">
+            <name>Text Entry_10</name>
+            <x>1213</x>
+            <y>74</y>
+            <width>50</width>
+          </widget>
+          <widget type="textupdate" version="2.0.0">
+            <name>Text Update_PulseCount_1</name>
+            <pv_name>$(SYSTEM=LLRF):PULSEDONECNT</pv_name>
+            <x>1176</x>
+            <y>672</y>
+            <width>180</width>
+            <height>30</height>
+            <tooltip>Pulse Count</tooltip>
+          </widget>
+        </children>
+      </tab>
+      <tab>
+        <name>Plots</name>
+        <children>
+          <widget type="embedded" version="2.0.0">
+            <name>Compare Plots</name>
+            <file>embedded/compare_plots.bob</file>
+            <x>8</x>
+            <y>1</y>
+            <width>1010</width>
+            <height>716</height>
+          </widget>
+        </children>
+      </tab>
+    </tabs>
+    <x>300</x>
+    <y>60</y>
+    <width>1030</width>
+    <height>770</height>
+  </widget>
+  <widget type="slide_button" version="2.0.0">
+    <name>Slide Button</name>
+    <pv_name>loc://cav-en(1)</pv_name>
+    <label>with Cavity</label>
+    <x>70</x>
+    <y>541</y>
+    <width>140</width>
+    <height>40</height>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_1</name>
+    <x>1510</x>
+    <y>240</y>
+    <width>1</width>
+    <height>1</height>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Timing-Group</name>
+    <x>1340</x>
+    <y>70</y>
+    <width>270</width>
+    <height>264</height>
+    <style>3</style>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_19</name>
+      <y>30</y>
+      <width>270</width>
+      <height>234</height>
+      <line_color>
+        <color name="GROUP-BORDER" red="150" green="155" blue="151">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_16</name>
+      <width>270</width>
+      <height>30</height>
+      <line_width>0</line_width>
+      <background_color>
+        <color name="GROUP-BORDER" red="150" green="155" blue="151">
+        </color>
+      </background_color>
+      <corner_width>10</corner_width>
+      <corner_height>10</corner_height>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_17</name>
+      <y>10</y>
+      <width>270</width>
+      <line_width>0</line_width>
+      <background_color>
+        <color name="GROUP-BORDER" red="150" green="155" blue="151">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_24</name>
+      <pv_name>loc://rate(14)</pv_name>
+      <x>110</x>
+      <y>90</y>
+      <width>60</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_37</name>
+      <text>Nr Pulses</text>
+      <x>12</x>
+      <y>120</y>
+      <width>80</width>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_40</name>
+      <text>Rate [Hz]</text>
+      <x>10</x>
+      <y>90</y>
+      <width>80</width>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Group Title_4</name>
+      <text>Standalone Timing Config</text>
+      <x>10</x>
+      <width>250</width>
+      <height>30</height>
+      <font>
+        <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_25</name>
+      <pv_name>loc://Npulses(1)</pv_name>
+      <x>112</x>
+      <y>120</y>
+      <width>60</width>
+      <format>1</format>
+      <precision>0</precision>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_42</name>
+      <text>Length [us]</text>
+      <x>10</x>
+      <y>60</y>
+      <width>80</width>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_26</name>
+      <pv_name>loc://length(2600)</pv_name>
+      <x>110</x>
+      <y>60</y>
+      <width>60</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Group Title_9</name>
+      <text>RF pulse</text>
+      <x>50</x>
+      <y>30</y>
+      <width>170</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_8</name>
+      <actions execute_as_one="true">
+        <action type="write_pv">
+          <pv_name>loc://pvprefix("$(LLRF_IOC_NAME)")</pv_name>
+          <value>$(LLRF_IOC_NAME)</value>
+          <description>Write PV</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>loc://set_evr(0)</pv_name>
+          <value>1</value>
+          <description>Write set_evr</description>
+        </action>
+      </actions>
+      <text>Set</text>
+      <x>12</x>
+      <y>200</y>
+      <width>58</width>
+      <height>40</height>
+      <scripts>
+        <script file="scripts/set_rfpulse.py">
+          <pv_name>loc://set_evr(0)</pv_name>
+          <pv_name trigger="false">loc://rate</pv_name>
+          <pv_name trigger="false">loc://length</pv_name>
+          <pv_name trigger="false">loc://pvprefix("$(LLRF_IOC_NAME)")</pv_name>
+        </script>
+      </scripts>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_9</name>
+      <actions execute_as_one="true">
+        <action type="write_pv">
+          <pv_name>loc://pvprefix("$(LLRF_IOC_NAME)")</pv_name>
+          <value>$(LLRF_IOC_NAME)</value>
+          <description>Write PV</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>loc://start_evr(0)</pv_name>
+          <value>1</value>
+          <description>Write start_evr</description>
+        </action>
+      </actions>
+      <text>Set + Run</text>
+      <x>80</x>
+      <y>200</y>
+      <width>76</width>
+      <height>40</height>
+      <scripts>
+        <script file="scripts/start_evr_pulses.py">
+          <pv_name>loc://start_evr(0)</pv_name>
+          <pv_name trigger="false">loc://rate</pv_name>
+          <pv_name trigger="false">loc://length</pv_name>
+          <pv_name trigger="false">loc://pvprefix("$(LLRF_IOC_NAME)")</pv_name>
+          <pv_name trigger="false">loc://Npulses</pv_name>
+        </script>
+      </scripts>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_10</name>
+      <actions execute_as_one="true">
+        <action type="write_pv">
+          <pv_name>TR-$(LLRF_IOC_NAME):SoftSeq0-Disable-Cmd</pv_name>
+          <value>1</value>
+          <description>Write PV</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>TR-$(LLRF_IOC_NAME):SoftSeq0-Disable-Cmd</pv_name>
+          <value>1</value>
+          <description>Write PV</description>
+        </action>
+      </actions>
+      <text>Stop Infinite Pulses</text>
+      <x>170</x>
+      <y>190</y>
+      <width>86</width>
+      <height>64</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_39</name>
+      <text>0 for infinte</text>
+      <x>170</x>
+      <y>110</y>
+      <width>87</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_TimingMode</name>
+      <text>Run Mode</text>
+      <x>12</x>
+      <y>150</y>
+      <width>80</width>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>tu_STATE_1</name>
+      <pv_name>TR-$(LLRF_IOC_NAME):SoftSeq0-RunMode-RB</pv_name>
+      <x>112</x>
+      <y>150</y>
+      <width>120</width>
+      <height>30</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+  </widget>
+  <widget type="xyplot" version="2.0.0">
+    <name>X/Y Plot</name>
+    <x>740</x>
+    <y>860</y>
+    <width>1</width>
+    <height>1</height>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_PulseCount</name>
+    <text>Pulse Count</text>
+    <x>50</x>
+    <y>430</y>
+    <width>170</width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_PulseCount</name>
+    <pv_name>$(SYSTEM=LLRF):PULSEDONECNT</pv_name>
+    <x>40</x>
+    <y>453</y>
+    <width>180</width>
+    <height>30</height>
+    <tooltip>Pulse Count</tooltip>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group</name>
+    <x>22</x>
+    <y>70</y>
+    <width>270</width>
+    <height>350</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_21</name>
+      <y>10</y>
+      <width>270</width>
+      <line_width>0</line_width>
+      <background_color>
+        <color name="GROUP-BORDER" red="150" green="155" blue="151">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_13</name>
+      <y>30</y>
+      <width>270</width>
+      <height>320</height>
+      <line_color>
+        <color name="GROUP-BORDER" red="150" green="155" blue="151">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>btn_Init</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(SYSTEM=LLRF):MSGS</pv_name>
+          <value>INIT</value>
+          <description>Go to INIT state</description>
+        </action>
+      </actions>
+      <text>Init</text>
+      <x>18</x>
+      <y>210</y>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>btn_Reset</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(SYSTEM=LLRF):MSGS</pv_name>
+          <value>RESET</value>
+          <description>Set state to RESETTING</description>
+        </action>
+      </actions>
+      <text>Reset</text>
+      <x>158</x>
+      <y>210</y>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>tu_STATE</name>
+      <pv_name>$(SYSTEM=LLRF)</pv_name>
+      <x>88</x>
+      <y>50</y>
+      <width>90</width>
+      <height>30</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>btn_On</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(SYSTEM=LLRF):MSGS</pv_name>
+          <value>ON</value>
+          <description>Go to ON state</description>
+        </action>
+      </actions>
+      <text>On</text>
+      <x>18</x>
+      <y>290</y>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>btn_Off</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(SYSTEM=LLRF):MSGS</pv_name>
+          <value>OFF</value>
+          <description>Go to Off state</description>
+        </action>
+      </actions>
+      <text>Off</text>
+      <x>18</x>
+      <y>110</y>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_14</name>
+      <width>270</width>
+      <height>30</height>
+      <line_width>0</line_width>
+      <background_color>
+        <color name="GROUP-BORDER" red="150" green="155" blue="151">
+        </color>
+      </background_color>
+      <corner_width>10</corner_width>
+      <corner_height>10</corner_height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Group Title_StateMachine</name>
+      <text>State Machine</text>
+      <width>270</width>
+      <height>30</height>
+      <font>
+        <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_16</name>
+      <x>69</x>
+      <y>242</y>
+      <width>1</width>
+      <height>40</height>
+      <line_color>
+        <color name="PRIMARY" red="0" green="148" blue="202">
+        </color>
+      </line_color>
+      <arrows>2</arrows>
+      <arrow_length>15</arrow_length>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="0.6650738020973108" y="40.96926197902667">
+        </point>
+      </points>
+      <scripts>
+        <script file="EmbeddedPy">
+          <text><![CDATA[## Script for Rule: Test
+
+from org.csstudio.display.builder.runtime.script import PVUtil
+
+## Process variable extraction
+## Use any of the following valid variable names in an expression:
+##     pv0
+##     pvInt0
+##     pvStr0
+##     pvSev0
+##     pvLegacySev0  [DEPRECATED]
+
+pv0 = PVUtil.getString(pvs[0])
+
+## Script Body
+if pv0 == "INIT":
+    widget.setPropertyValue('visible', True)
+else:
+    widget.setPropertyValue('visible', False)
+]]></text>
+          <pv_name>$(SYSTEM=LLRF)</pv_name>
+        </script>
+      </scripts>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_17</name>
+      <x>119</x>
+      <y>244</y>
+      <width>79</width>
+      <height>60</height>
+      <line_color>
+        <color name="PRIMARY" red="0" green="148" blue="202">
+        </color>
+      </line_color>
+      <arrows>2</arrows>
+      <arrow_length>15</arrow_length>
+      <points>
+        <point x="0.0" y="60.861835002674695">
+        </point>
+        <point x="79.52208183060998" y="0.0">
+        </point>
+      </points>
+      <scripts>
+        <script file="EmbeddedPy">
+          <text><![CDATA[## Script for Rule: Test
+
+from org.csstudio.display.builder.runtime.script import PVUtil
+
+## Process variable extraction
+## Use any of the following valid variable names in an expression:
+##     pv0
+##     pvInt0
+##     pvStr0
+##     pvSev0
+##     pvLegacySev0  [DEPRECATED]
+
+pv0 = PVUtil.getString(pvs[0])
+
+## Script Body
+if pv0 == "ON":
+    widget.setPropertyValue('visible', True)
+else:
+    widget.setPropertyValue('visible', False)
+]]></text>
+          <pv_name>$(SYSTEM=LLRF)</pv_name>
+        </script>
+      </scripts>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_18</name>
+      <x>67</x>
+      <y>150</y>
+      <width>1</width>
+      <height>52</height>
+      <line_color>
+        <color name="PRIMARY" red="0" green="148" blue="202">
+        </color>
+      </line_color>
+      <arrows>2</arrows>
+      <arrow_length>15</arrow_length>
+      <points>
+        <point x="1.197690167080168" y="52.16893647984648">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+      </points>
+      <scripts>
+        <script file="EmbeddedPy">
+          <text><![CDATA[## Script for Rule: Test
+
+from org.csstudio.display.builder.runtime.script import PVUtil
+
+## Process variable extraction
+## Use any of the following valid variable names in an expression:
+##     pv0
+##     pvInt0
+##     pvStr0
+##     pvSev0
+##     pvLegacySev0  [DEPRECATED]
+
+pv0 = PVUtil.getString(pvs[0])
+
+## Script Body
+if pv0 == "INIT":
+    widget.setPropertyValue('visible', True)
+else:
+    widget.setPropertyValue('visible', False)
+]]></text>
+          <pv_name>$(SYSTEM=LLRF)</pv_name>
+        </script>
+      </scripts>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_19</name>
+      <x>123</x>
+      <y>130</y>
+      <width>80</width>
+      <height>70</height>
+      <line_color>
+        <color name="PRIMARY" red="0" green="148" blue="202">
+        </color>
+      </line_color>
+      <arrows>2</arrows>
+      <arrow_length>15</arrow_length>
+      <points>
+        <point x="80.0546981955928" y="70.79657617162113">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+      </points>
+      <scripts>
+        <script file="EmbeddedPy">
+          <text><![CDATA[## Script for Rule: Test
+
+from org.csstudio.display.builder.runtime.script import PVUtil
+
+## Process variable extraction
+## Use any of the following valid variable names in an expression:
+##     pv0
+##     pvInt0
+##     pvStr0
+##     pvSev0
+##     pvLegacySev0  [DEPRECATED]
+
+pv0 = PVUtil.getString(pvs[0])
+
+## Script Body
+if pv0 == "RESETTING":
+    widget.setPropertyValue('visible', True)
+else:
+    widget.setPropertyValue('visible', False)
+]]></text>
+          <pv_name>$(SYSTEM=LLRF)</pv_name>
+        </script>
+      </scripts>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_20</name>
+      <x>122</x>
+      <y>225</y>
+      <width>34</width>
+      <height>1</height>
+      <line_color>
+        <color name="PRIMARY" red="0" green="148" blue="202">
+        </color>
+      </line_color>
+      <arrows>2</arrows>
+      <arrow_length>15</arrow_length>
+      <points>
+        <point x="34.72744161227453" y="0.0">
+        </point>
+        <point x="0.0" y="0.6093759801815963">
+        </point>
+      </points>
+      <scripts>
+        <script file="EmbeddedPy">
+          <text><![CDATA[## Script for Rule: Test
+
+from org.csstudio.display.builder.runtime.script import PVUtil
+
+## Process variable extraction
+## Use any of the following valid variable names in an expression:
+##     pv0
+##     pvInt0
+##     pvStr0
+##     pvSev0
+##     pvLegacySev0  [DEPRECATED]
+
+pv0 = PVUtil.getString(pvs[0])
+
+## Script Body
+if pv0 == "RESETTING":
+    widget.setPropertyValue('visible', True)
+else:
+    widget.setPropertyValue('visible', False)
+]]></text>
+          <pv_name>$(SYSTEM=LLRF)</pv_name>
+        </script>
+      </scripts>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_21</name>
+      <x>119</x>
+      <y>226</y>
+      <width>34</width>
+      <height>1</height>
+      <line_color>
+        <color name="PRIMARY" red="0" green="148" blue="202">
+        </color>
+      </line_color>
+      <arrows>2</arrows>
+      <arrow_length>15</arrow_length>
+      <points>
+        <point x="0.0" y="0.011545342877582243">
+        </point>
+        <point x="34.194825247291675" y="0.0">
+        </point>
+      </points>
+      <scripts>
+        <script file="EmbeddedPy">
+          <text><![CDATA[## Script for Rule: Test
+
+from org.csstudio.display.builder.runtime.script import PVUtil
+
+## Process variable extraction
+## Use any of the following valid variable names in an expression:
+##     pv0
+##     pvInt0
+##     pvStr0
+##     pvSev0
+##     pvLegacySev0  [DEPRECATED]
+
+pv0 = PVUtil.getString(pvs[0])
+
+## Script Body
+if pv0 == "INIT":
+    widget.setPropertyValue('visible', True)
+else:
+    widget.setPropertyValue('visible', False)
+]]></text>
+          <pv_name>$(SYSTEM=LLRF)</pv_name>
+        </script>
+      </scripts>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_22</name>
+      <x>67</x>
+      <y>145</y>
+      <width>1</width>
+      <height>58</height>
+      <line_color>
+        <color name="PRIMARY" red="0" green="148" blue="202">
+        </color>
+      </line_color>
+      <arrows>2</arrows>
+      <arrow_length>15</arrow_length>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="0.6683393537587676" y="58.39331262986022">
+        </point>
+      </points>
+      <scripts>
+        <script file="EmbeddedPy">
+          <text><![CDATA[## Script for Rule: Test
+
+from org.csstudio.display.builder.runtime.script import PVUtil
+
+## Process variable extraction
+## Use any of the following valid variable names in an expression:
+##     pv0
+##     pvInt0
+##     pvStr0
+##     pvSev0
+##     pvLegacySev0  [DEPRECATED]
+
+pv0 = PVUtil.getString(pvs[0])
+
+## Script Body
+if pv0 == "OFF":
+    widget.setPropertyValue('visible', True)
+else:
+    widget.setPropertyValue('visible', False)
+]]></text>
+          <pv_name>$(SYSTEM=LLRF)</pv_name>
+        </script>
+      </scripts>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>PI-Group</name>
+    <x>22</x>
+    <y>581</y>
+    <width>270</width>
+    <height>245</height>
+    <style>3</style>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_24</name>
+      <y>30</y>
+      <width>270</width>
+      <height>215</height>
+      <line_color>
+        <color name="GROUP-BORDER" red="150" green="155" blue="151">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_25</name>
+      <width>270</width>
+      <height>30</height>
+      <line_width>0</line_width>
+      <background_color>
+        <color name="GROUP-BORDER" red="150" green="155" blue="151">
+        </color>
+      </background_color>
+      <corner_width>10</corner_width>
+      <corner_height>10</corner_height>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_26</name>
+      <y>10</y>
+      <width>270</width>
+      <line_width>0</line_width>
+      <background_color>
+        <color name="GROUP-BORDER" red="150" green="155" blue="151">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Group Title_6</name>
+      <text>PI Controller</text>
+      <x>10</x>
+      <width>250</width>
+      <height>30</height>
+      <font>
+        <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Group Title_10</name>
+      <text>I</text>
+      <y>30</y>
+      <width>270</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Group Title_11</name>
+      <text>Q</text>
+      <y>134</y>
+      <width>262</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_RefMag_1</name>
+      <class>CAPTION</class>
+      <text>Fixed Set Point</text>
+      <x>10</x>
+      <y>62</y>
+      <width>121</width>
+      <foreground_color use_class="true">
+        <color name="Text" red="25" green="25" blue="25">
+        </color>
+      </foreground_color>
+      <horizontal_alignment use_class="true">2</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>AI0 Text Update_8</name>
+      <pv_name>$(SYSTEM=LLRF):PI-I-FIXEDSPVAL-RBV</pv_name>
+      <x>143</x>
+      <y>62</y>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_RefMag_3</name>
+      <class>CAPTION</class>
+      <text>Gain K</text>
+      <x>10</x>
+      <y>87</y>
+      <width>121</width>
+      <foreground_color use_class="true">
+        <color name="Text" red="25" green="25" blue="25">
+        </color>
+      </foreground_color>
+      <horizontal_alignment use_class="true">2</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>AI0 Text Update_18</name>
+      <pv_name>$(SYSTEM=LLRF):PI-I-GAINK-RBV</pv_name>
+      <x>143</x>
+      <y>87</y>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_RefMag_4</name>
+      <class>CAPTION</class>
+      <text>Gain Ts/Ti</text>
+      <x>10</x>
+      <y>112</y>
+      <width>121</width>
+      <foreground_color use_class="true">
+        <color name="Text" red="25" green="25" blue="25">
+        </color>
+      </foreground_color>
+      <horizontal_alignment use_class="true">2</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>AI0 Text Update_17</name>
+      <pv_name>$(SYSTEM=LLRF):PI-I-GAINTSDIVTI-RBV</pv_name>
+      <x>143</x>
+      <y>112</y>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_RefMag_2</name>
+      <class>CAPTION</class>
+      <text>Fixed Set Point</text>
+      <x>10</x>
+      <y>164</y>
+      <width>121</width>
+      <foreground_color use_class="true">
+        <color name="Text" red="25" green="25" blue="25">
+        </color>
+      </foreground_color>
+      <horizontal_alignment use_class="true">2</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>AI0 Text Update_2</name>
+      <pv_name>$(SYSTEM=LLRF):PI-Q-FIXEDSPVAL-RBV</pv_name>
+      <x>143</x>
+      <y>164</y>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_RefMag_5</name>
+      <class>CAPTION</class>
+      <text>Gain K</text>
+      <x>10</x>
+      <y>190</y>
+      <width>121</width>
+      <foreground_color use_class="true">
+        <color name="Text" red="25" green="25" blue="25">
+        </color>
+      </foreground_color>
+      <horizontal_alignment use_class="true">2</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>AI0 Text Update_16</name>
+      <pv_name>$(SYSTEM=LLRF):PI-Q-GAINK-RBV</pv_name>
+      <x>143</x>
+      <y>190</y>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_RefMag_6</name>
+      <class>CAPTION</class>
+      <text>Gain Ts/Ti</text>
+      <x>10</x>
+      <y>215</y>
+      <width>121</width>
+      <foreground_color use_class="true">
+        <color name="Text" red="25" green="25" blue="25">
+        </color>
+      </foreground_color>
+      <horizontal_alignment use_class="true">2</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>AI0 Text Update_15</name>
+      <pv_name>$(SYSTEM=LLRF):PI-Q-GAINTSDIVTI-RBV</pv_name>
+      <x>143</x>
+      <y>215</y>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_PulseCount_2</name>
+    <text>Output Limiter</text>
+    <x>1344</x>
+    <y>733</y>
+    <width>170</width>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED</name>
+    <pv_name>$(SYSTEM=LLRF):VM-MAGLIMSTAT</pv_name>
+    <x>1500</x>
+    <y>733</y>
+    <width>110</width>
+    <height>25</height>
+    <square>true</square>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Signal-Monitor-Group_1</name>
+    <x>1340</x>
+    <y>352</y>
+    <width>275</width>
+    <height>375</height>
+    <style>3</style>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_27</name>
+      <y>30</y>
+      <width>275</width>
+      <height>345</height>
+      <line_color>
+        <color name="GROUP-BORDER" red="150" green="155" blue="151">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_28</name>
+      <width>275</width>
+      <height>30</height>
+      <line_width>0</line_width>
+      <background_color>
+        <color name="GROUP-BORDER" red="150" green="155" blue="151">
+        </color>
+      </background_color>
+      <corner_width>10</corner_width>
+      <corner_height>10</corner_height>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_29</name>
+      <y>10</y>
+      <width>275</width>
+      <line_width>0</line_width>
+      <background_color>
+        <color name="GROUP-BORDER" red="150" green="155" blue="151">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Group Title_7</name>
+      <text>Signal Monitoring</text>
+      <x>10</x>
+      <width>265</width>
+      <height>30</height>
+      <font>
+        <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_60</name>
+      <class>CAPTION</class>
+      <text>ALARM</text>
+      <x>150</x>
+      <y>41</y>
+      <width>50</width>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color name="Text" red="25" green="25" blue="25">
+        </color>
+      </foreground_color>
+      <horizontal_alignment use_class="true">2</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_61</name>
+      <text>PMS</text>
+      <x>192</x>
+      <y>41</y>
+      <width>40</width>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_62</name>
+      <text>ILOCK</text>
+      <x>214</x>
+      <y>41</y>
+      <width>58</width>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_3</name>
+      <x>214</x>
+      <y>229</y>
+      <width>1</width>
+      <height>1</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>status channel_8</name>
+      <macros>
+        <CHANNEL>AI2</CHANNEL>
+      </macros>
+      <file>embedded/status-chan.bob</file>
+      <x>3</x>
+      <y>127</y>
+      <width>268</width>
+      <height>30</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>status channel_9</name>
+      <macros>
+        <CHANNEL>AI3</CHANNEL>
+      </macros>
+      <file>embedded/status-chan.bob</file>
+      <x>3</x>
+      <y>157</y>
+      <width>268</width>
+      <height>30</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>status channel_10</name>
+      <macros>
+        <CHANNEL>AI4</CHANNEL>
+      </macros>
+      <file>embedded/status-chan.bob</file>
+      <x>3</x>
+      <y>187</y>
+      <width>268</width>
+      <height>30</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>status channel_11</name>
+      <macros>
+        <CHANNEL>AI5</CHANNEL>
+      </macros>
+      <file>embedded/status-chan.bob</file>
+      <x>3</x>
+      <y>217</y>
+      <width>268</width>
+      <height>30</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>status channel_12</name>
+      <macros>
+        <CHANNEL>AI6</CHANNEL>
+      </macros>
+      <file>embedded/status-chan.bob</file>
+      <x>3</x>
+      <y>247</y>
+      <width>268</width>
+      <height>30</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>status channel_13</name>
+      <macros>
+        <CHANNEL>AI7</CHANNEL>
+      </macros>
+      <file>embedded/status-chan.bob</file>
+      <x>3</x>
+      <y>277</y>
+      <width>268</width>
+      <height>30</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>status channel_14</name>
+      <macros>
+        <CHANNEL>AI8</CHANNEL>
+      </macros>
+      <file>embedded/status-chan.bob</file>
+      <x>3</x>
+      <y>307</y>
+      <width>268</width>
+      <height>30</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>status channel_15</name>
+      <macros>
+        <CHANNEL>AI9</CHANNEL>
+      </macros>
+      <file>embedded/status-chan.bob</file>
+      <x>3</x>
+      <y>337</y>
+      <width>268</width>
+      <height>30</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>status channel_16</name>
+      <macros>
+        <CHANNEL>AI0</CHANNEL>
+      </macros>
+      <file>embedded/status-chan.bob</file>
+      <x>3</x>
+      <y>67</y>
+      <width>268</width>
+      <height>30</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>status channel_17</name>
+      <macros>
+        <CHANNEL>AI1</CHANNEL>
+      </macros>
+      <file>embedded/status-chan.bob</file>
+      <x>3</x>
+      <y>97</y>
+      <width>268</width>
+      <height>30</height>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_PulseCount_3</name>
+    <text>Main Instance</text>
+    <x>1344</x>
+    <y>799</y>
+    <width>118</width>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_1</name>
+    <pv_name>$(INSTANCE1):MAIN-RBV</pv_name>
+    <x>1490</x>
+    <y>799</y>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_2</name>
+    <pv_name>$(INSTANCE2):MAIN-RBV</pv_name>
+    <x>1520</x>
+    <y>799</y>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_3</name>
+    <pv_name>$(INSTANCE3):MAIN-RBV</pv_name>
+    <x>1552</x>
+    <y>799</y>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_4</name>
+    <pv_name>$(INSTANCE4):MAIN-RBV</pv_name>
+    <x>1585</x>
+    <y>799</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_PulseCount_4</name>
+    <text>1       2      3       4</text>
+    <x>1490</x>
+    <y>774</y>
+    <width>123</width>
+  </widget>
+</display>
