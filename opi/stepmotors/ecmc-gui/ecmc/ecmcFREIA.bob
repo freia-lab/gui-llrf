@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>ecmcFREIA</name>
+  <macros>
+    <P>ESSPMAC:</P>
+  </macros>
+  <width>1370</width>
+  <height>660</height>
+  <background_color>
+    <color red="240" green="240" blue="240">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <widget type="tabs" version="2.0.0">
+    <name>Tabbed Container</name>
+    <tabs>
+      <tab>
+        <name>General</name>
+        <children>
+          <widget type="rectangle" version="2.0.0">
+            <name>MGGrey03-background_2</name>
+            <width>1350</width>
+            <height>560</height>
+            <line_width>2</line_width>
+            <line_color>
+              <color name="GROUP-BORDER" red="150" green="155" blue="151">
+              </color>
+            </line_color>
+            <background_color>
+              <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+              </color>
+            </background_color>
+            <corner_width>10</corner_width>
+            <corner_height>10</corner_height>
+          </widget>
+          <widget type="embedded" version="2.0.0">
+            <name>Linking Container</name>
+            <macros>
+              <P>ESSPMAC:</P>
+            </macros>
+            <file>embedded/ecmcMCUGeneral_v01.bob</file>
+            <x>28</x>
+            <y>19</y>
+            <width>500</width>
+            <height>120</height>
+            <resize>1</resize>
+            <actions>
+            </actions>
+            <border_color>
+              <color red="0" green="128" blue="255">
+              </color>
+            </border_color>
+          </widget>
+          <widget type="group" version="2.0.0">
+            <name>Diagnostics</name>
+            <x>278</x>
+            <y>170</y>
+            <width>241</width>
+            <height>175</height>
+            <font>
+              <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+              </font>
+            </font>
+            <foreground_color>
+              <color red="0" green="0" blue="0">
+              </color>
+            </foreground_color>
+            <background_color>
+              <color name="BACKGROUND" red="220" green="225" blue="221">
+              </color>
+            </background_color>
+            <actions>
+            </actions>
+            <widget type="action_button" version="3.0.0">
+              <name>Action Button</name>
+              <actions>
+                <action type="open_display">
+                  <file>embedded/ecmcDiagEc_v02.bob</file>
+                  <macros>
+                    <MASTER_ID>0</MASTER_ID>
+                  </macros>
+                  <target>tab</target>
+                  <description>Open Display</description>
+                </action>
+              </actions>
+              <text>EtherCAT master</text>
+              <x>5</x>
+              <y>10</y>
+              <width>190</width>
+              <height>40</height>
+              <tooltip>$(actions)</tooltip>
+            </widget>
+            <widget type="action_button" version="3.0.0">
+              <name>Action Button_1</name>
+              <actions>
+                <action type="open_display">
+                  <file>embedded/ecmcDiagThread_v01.bob</file>
+                  <target>tab</target>
+                  <description>Open Display</description>
+                </action>
+              </actions>
+              <text>Real-time</text>
+              <x>5</x>
+              <y>80</y>
+              <width>190</width>
+              <height>40</height>
+              <tooltip>$(actions)</tooltip>
+            </widget>
+          </widget>
+          <widget type="group" version="2.0.0">
+            <name>Hardware MCU1026</name>
+            <x>28</x>
+            <y>170</y>
+            <width>232</width>
+            <height>250</height>
+            <font>
+              <font family="Source Sans Pro" style="BOLD" size="16.0">
+              </font>
+            </font>
+            <widget type="action_button" version="3.0.0">
+              <name>Action Button_2</name>
+              <actions>
+                <action type="open_display">
+                  <file>embedded/ecmcEK1100_v01.bob</file>
+                  <macros>
+                    <MASTER_ID>0</MASTER_ID>
+                    <SLAVE_POS>0</SLAVE_POS>
+                    <TYPE>EK1100</TYPE>
+                  </macros>
+                  <target>tab</target>
+                  <description>Slave0 EK1100</description>
+                </action>
+              </actions>
+              <y>10</y>
+              <width>190</width>
+              <height>50</height>
+              <tooltip>$(actions)</tooltip>
+            </widget>
+            <widget type="action_button" version="3.0.0">
+              <name>Action Button_3</name>
+              <actions>
+                <action type="open_display">
+                  <file>embedded/ecmcEL7037_v01.bob</file>
+                  <macros>
+                    <MASTER_ID>0</MASTER_ID>
+                    <SLAVE_POS>1</SLAVE_POS>
+                    <TYPE>EL7037</TYPE>
+                  </macros>
+                  <target>tab</target>
+                  <description>Slave1 EL7037</description>
+                </action>
+              </actions>
+              <y>80</y>
+              <width>190</width>
+              <height>50</height>
+              <tooltip>$(actions)</tooltip>
+            </widget>
+            <widget type="action_button" version="3.0.0">
+              <name>Action Button_5</name>
+              <actions>
+                <action type="open_display">
+                  <file>embedded/ecmcEL7037_v01.bob</file>
+                  <macros>
+                    <MASTER_ID>0</MASTER_ID>
+                    <SLAVE_POS>2</SLAVE_POS>
+                    <TYPE>EL7037</TYPE>
+                  </macros>
+                  <target>tab</target>
+                  <description>Slave2 EL7037</description>
+                </action>
+              </actions>
+              <y>150</y>
+              <width>190</width>
+              <height>50</height>
+              <tooltip>$(actions)</tooltip>
+            </widget>
+          </widget>
+        </children>
+      </tab>
+      <tab>
+        <name>Cavity 1</name>
+        <children>
+          <widget type="embedded" version="2.0.0">
+            <name>OneAxisMotor1</name>
+            <macros>
+              <AxisId>1</AxisId>
+              <M>MTR1</M>
+              <R>MTR1-</R>
+            </macros>
+            <file>embedded/ecmcOneAxisMR.bob</file>
+            <width>1350</width>
+            <height>560</height>
+            <actions>
+            </actions>
+            <border_color>
+              <color red="0" green="128" blue="255">
+              </color>
+            </border_color>
+          </widget>
+        </children>
+      </tab>
+      <tab>
+        <name>Cavity 2</name>
+        <children>
+          <widget type="embedded" version="2.0.0">
+            <name>OneAxixMotor2</name>
+            <macros>
+              <AxisId>2</AxisId>
+              <M>MTR2</M>
+              <R>MTR2-</R>
+            </macros>
+            <file>embedded/ecmcOneAxisMR.opi</file>
+            <width>1350</width>
+            <height>560</height>
+            <actions>
+            </actions>
+            <border_color>
+              <color red="0" green="128" blue="255">
+              </color>
+            </border_color>
+          </widget>
+        </children>
+      </tab>
+    </tabs>
+    <y>50</y>
+    <width>1355</width>
+    <height>600</height>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <tab_height>10</tab_height>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>FREIA MOTION CONTROL OPI</text>
+    <width>443</width>
+    <height>48</height>
+    <font>
+      <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+</display>

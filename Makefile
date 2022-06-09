@@ -1,6 +1,6 @@
 MODULE_NAME := llrf
 
-OPI_VERSION := 1.8.0
+OPI_VERSION := 1.9.0
 OPI_DIRNAME := llrf
 
 

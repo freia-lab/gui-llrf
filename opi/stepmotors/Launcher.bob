@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Display</name>
+  <width>320</width>
+  <height>300</height>
+  <widget type="rectangle" version="2.0.0">
+    <name>Titlebar</name>
+    <class>TITLE-BAR</class>
+    <x use_class="true">0</x>
+    <y use_class="true">0</y>
+    <width>920</width>
+    <height use_class="true">50</height>
+    <line_width use_class="true">0</line_width>
+    <background_color use_class="true">
+      <color name="PRIMARY-HEADER-BACKGROUND" red="151" green="188" blue="202">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Title</name>
+    <class>TITLE</class>
+    <text>FREIA Motion Control</text>
+    <x use_class="true">20</x>
+    <y use_class="true">0</y>
+    <width>360</width>
+    <height use_class="true">50</height>
+    <font use_class="true">
+      <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="HEADER-TEXT" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <transparent use_class="true">true</transparent>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <wrap_words use_class="true">false</wrap_words>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>MGGrey02</name>
+    <x>20</x>
+    <y>70</y>
+    <width>280</width>
+    <height>160</height>
+    <style>3</style>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <widget type="rectangle" version="2.0.0">
+      <name>MGGrey02-background</name>
+      <width>280</width>
+      <height>160</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="GROUP-BORDER" red="150" green="155" blue="151">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button</name>
+      <actions>
+        <action type="open_display">
+          <file>motors.bob</file>
+          <macros>
+            <M1>MTR1</M1>
+            <M2>MTR2</M2>
+            <P>ESSPMAC:</P>
+            <PATH>ecmc-gui/ecmc/ecmcFREIA.bob</PATH>
+          </macros>
+          <target>tab</target>
+          <description>Open Display</description>
+        </action>
+      </actions>
+      <text>OLD CONTROLLER</text>
+      <x>40</x>
+      <y>30</y>
+      <width>200</width>
+      <height>40</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_4</name>
+      <actions>
+        <action type="open_display">
+          <file>motors.bob</file>
+          <macros>
+            <M1>MTR1</M1>
+            <M2>MTR2</M2>
+            <P>ESSPMAC:</P>
+            <PATH>two_axis.bob</PATH>
+          </macros>
+          <target>tab</target>
+          <description>Open Display</description>
+        </action>
+      </actions>
+      <text>NEW CONTROLLER</text>
+      <x>40</x>
+      <y>90</y>
+      <width>200</width>
+      <height>40</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+  </widget>
+</display>

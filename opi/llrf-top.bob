@@ -294,4 +294,26 @@
     </background_color>
     <tooltip>$(actions)</tooltip>
   </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_4</name>
+    <actions>
+      <action type="open_display">
+        <file>stepmotors/motors.bob</file>
+        <macros>
+          <M1>MTR1</M1>
+          <M2>MTR2</M2>
+          <P>ESSPMAC:</P>
+          <PATH>two_axis.bob</PATH>
+        </macros>
+        <target>tab</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <text>Tuner Motors</text>
+    <x>540</x>
+    <y>85</y>
+    <width>200</width>
+    <height>60</height>
+    <tooltip>$(actions)</tooltip>
+  </widget>
 </display>
